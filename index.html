@@ -1,13 +1,11 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#080d15">
-<meta name="description" content="Mohamed Falfoul — Child & Adolescent Psychiatry, Strategy, Training, and International Representation.">
-<meta property="og:title" content="Mohamed Falfoul — The Global Figure">
-<meta property="og:description" content="Ideas into Action. Voices into Impact.">
+<meta name="description" content="Mohamed Falfoul — Child & Adolescent Psychiatry, Strategy, Capacity Building and International Representation.">
 <title>Mohamed Falfoul — The Global Figure</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,87 +16,84 @@
 <style>
 :root {
   --bg:#080d15;
-  --bg2:#101a27;
-  --cream:#f4eee6;
-  --gold:#d8b98b;
-  --muted:#a7b1bd;
+  --bg2:#111c29;
+  --cream:#f5efe7;
+  --gold:#d9bb8b;
+  --muted:#a9b5c1;
   --line:#34404c;
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:Manrope,Arial,sans-serif;
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:88px}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;background:var(--bg);color:var(--cream);font:14px var(--sans)}
 body.lock{overflow:hidden}
-button,input{font:inherit}
-button{cursor:pointer}
+main[hidden]{display:none!important}
 a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
 button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-::selection{background:var(--gold);color:#0b1520}
+::selection{background:var(--gold);color:#08101a}
 .wrap{max-width:1410px;margin:auto;padding:0 6%}
 .section{padding:105px 0;border-top:1px solid var(--line)}
-.eyebrow{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:800;color:var(--gold)}
-.section-title{font:500 clamp(50px,6.1vw,92px)/.93 var(--serif);letter-spacing:-.04em;margin:16px 0 21px}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:.21em;text-transform:uppercase;color:var(--gold)}
+.section-title{font:500 clamp(51px,6.3vw,92px)/.93 var(--serif);letter-spacing:-.045em;margin:15px 0 21px}
 .section-title em{font-weight:400}
-.muted{color:var(--muted);line-height:1.9}
+.muted{color:var(--muted);line-height:1.85}
 .tag{font-size:10px;color:var(--gold);letter-spacing:.11em;text-transform:uppercase;font-weight:700}
-.button{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:16px 21px;border:1px solid var(--gold);background:var(--gold);color:#111923;font-size:11px;font-weight:800;transition:.25s}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:15px;padding:16px 22px;background:var(--gold);color:#111923;border:1px solid var(--gold);font-size:11px;font-weight:800;transition:.25s}
 .button:hover{background:#efd2a6;transform:translateY(-2px)}
-.button.ghost{background:transparent;border-color:#7b8794;color:var(--cream)}
+.button.ghost{background:transparent;border-color:#788493;color:var(--cream)}
 .button.ghost:hover{border-color:var(--gold);color:var(--gold)}
-.arrow-link{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--gold);text-transform:uppercase}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:34px}
-.section-head>p{max-width:400px}
-.fine-rule{display:inline-block;vertical-align:middle;width:50px;height:1px;margin-right:15px;background:var(--gold)}
+.text-link{border:0;background:none;color:var(--gold);padding:0;font-size:11px;letter-spacing:.1em;font-weight:800;text-transform:uppercase;text-align:left}
+.text-link:hover{text-decoration:underline;text-underline-offset:6px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:34px}
+.section-head>p{max-width:405px}
+.fine-rule{display:inline-block;width:49px;height:1px;margin-right:14px;background:var(--gold);vertical-align:middle}
 
-/* NAVIGATION */
-
-.header{height:78px;position:fixed;z-index:200;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 4.5%;border-bottom:1px solid #ffffff20;background:#080d15ec;backdrop-filter:blur(16px)}
-.header.scrolled{height:68px}
+/* HEADER */
+.header{height:78px;position:fixed;z-index:300;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 4.5%;background:#080d15ed;backdrop-filter:blur(17px);border-bottom:1px solid #ffffff20}
 .brand{font:600 40px var(--serif);letter-spacing:-.06em}
 .brand span{color:var(--gold)}
-.menu{display:flex;gap:23px;align-items:center}
-.menu a{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:#cad2d9}
+.menu{display:flex;align-items:center;gap:22px}
+.menu a{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#c8d0da}
 .menu a:hover{color:var(--gold)}
-.menu .nav-cta{border:1px solid var(--gold);padding:12px;color:var(--gold)}
-.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--cream);padding:10px}
+.menu .nav-cta{border:1px solid var(--gold);color:var(--gold);padding:12px 14px}
+.menu-toggle{display:none;background:transparent;color:var(--cream);border:1px solid var(--line);padding:10px}
 
 /* HERO */
-
-.hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:135px 0 110px;background:radial-gradient(ellipse at 82% 40%,#25344a 0%,#101825 35%,transparent 66%),var(--bg)}
-.hero:before{content:'';inset:0;position:absolute;background:linear-gradient(90deg,#080d15 5%,#080d15e3 43%,transparent 88%)}
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:135px 0 110px;background:radial-gradient(ellipse at 83% 43%,#273a50 0%,#101825 35%,transparent 68%),var(--bg)}
+.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#080d15 5%,#080d15dd 45%,transparent 90%)}
 .hero-art{position:absolute;right:-12%;top:7%;width:63vw;height:85%;pointer-events:none}
-.hero-circle{width:100%;max-width:830px;aspect-ratio:1;border:1px solid #d8b98b25;border-radius:50%;position:absolute;top:-10%;right:0}
+.hero-circle{position:absolute;width:100%;max-width:820px;aspect-ratio:1;border:1px solid #d8b98b28;border-radius:50%;top:-9%;right:0}
 .hero-circle:before,.hero-circle:after{content:'';position:absolute;inset:13%;border:1px solid #d8b98b27;border-radius:50%}
 .hero-circle:after{inset:28%}
-.hero-content{position:relative;max-width:990px}
+.hero-content{position:relative;max-width:970px}
 .hero h1{font:500 clamp(70px,9.5vw,145px)/.82 var(--serif);letter-spacing:-.062em;margin:30px 0}
 .hero h1 em{color:var(--gold);font-weight:400}
 .hero-summary{max-width:555px;font-size:15px;line-height:1.9;color:#c6cdd5}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:35px}
-.hero-bottom{position:absolute;bottom:30px;left:6%;right:6%;display:flex;justify-content:space-between;gap:15px;color:#8391a0;font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+.hero-bottom{position:absolute;bottom:30px;left:6%;right:6%;display:flex;justify-content:space-between;gap:20px;color:#8797a5;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
 
 /* GLOBAL STAGE */
-
 .stage-note{max-width:400px}
 .stage-note strong{font:500 26px var(--serif)}
-.spotlight{display:grid;grid-template-columns:1.05fr .95fr;min-height:510px;border:1px solid #79694f;background:var(--bg2);overflow:hidden}
-.spotlight-media{min-height:480px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 45% 30%,#a88a6340,transparent 45%),linear-gradient(145deg,#293d51,#0a1119)}
+.spotlight{display:grid;grid-template-columns:1.05fr .95fr;min-height:500px;border:1px solid #79694f;background:var(--bg2);overflow:hidden}
+.spotlight-media{min-height:470px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 45% 30%,#a88a6340,transparent 45%),linear-gradient(145deg,#293d51,#0a1119)}
 .spotlight-media:before{content:'';position:absolute;inset:11% 17% 0;border:1px solid #d8b98b44;border-bottom:0;border-radius:50% 50% 0 0}
 .spotlight-media:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#080d15c8,transparent 62%)}
-.spotlight-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:saturate(.8)}
-.spotlight-caption{position:absolute;top:23px;left:25px;z-index:2;background:#080d15b8;padding:9px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#ead5b4}
-.spotlight-city{position:absolute;z-index:2;bottom:24px;left:26px;font:500 clamp(72px,9vw,140px)/.82 var(--serif);letter-spacing:-.05em;color:#f4eee6a8}
-.spotlight-copy{padding:clamp(29px,4vw,63px);display:flex;flex-direction:column;justify-content:center}
-.spotlight-copy h3{font:500 clamp(53px,5.2vw,83px)/.88 var(--serif);letter-spacing:-.04em;margin:27px 0}
-.spotlight-copy>p{line-height:1.85;color:var(--muted);max-width:410px}
-.spotlight-meta{display:flex;gap:12px;flex-wrap:wrap;margin:13px 0 24px;font-size:11px;color:#bcc7d2}
+.spotlight-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.spotlight-caption{position:absolute;top:23px;left:25px;z-index:2;background:#080d15b8;padding:9px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#ead5b4}
+.spotlight-city{position:absolute;z-index:2;bottom:24px;left:26px;font:500 clamp(72px,9vw,140px)/.82 var(--serif);letter-spacing:-.05em;color:#f4eee6aa}
+.spotlight-copy{padding:clamp(29px,4vw,60px);display:flex;flex-direction:column;justify-content:center}
+.spotlight-copy h3{font:500 clamp(52px,5.2vw,81px)/.88 var(--serif);letter-spacing:-.04em;margin:26px 0}
+.spotlight-copy>p{line-height:1.85;color:var(--muted)}
+.spotlight-meta{display:flex;gap:12px;flex-wrap:wrap;margin:13px 0 24px;font-size:11px;color:#bdc7d0}
 .spotlight-meta span{padding-left:11px;border-left:1px solid var(--gold)}
 .spot-controls{display:flex;align-items:center;gap:10px;margin-top:25px}
 .round-control{width:43px;height:43px;border-radius:50%;background:transparent;color:var(--cream);border:1px solid #687483;font-size:19px}
 .round-control:hover{border-color:var(--gold);color:var(--gold)}
-.autoplay-toggle{border:1px solid #576472;background:transparent;color:var(--gold);padding:12px 15px;font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+.autoplay-toggle{border:1px solid #576472;background:transparent;color:var(--gold);padding:12px 15px;font-size:10px;text-transform:uppercase}
 .autoplay-indicator{height:2px;background:#2a3c4c;width:175px;margin-top:14px;overflow:hidden}
 .autoplay-indicator span{display:block;height:100%;width:0;background:var(--gold)}
 .autoplay-indicator.running span{animation:progress 8s linear forwards}
@@ -127,40 +122,35 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .event-card.pending{opacity:.82}
 .archive-note{font-size:11px;color:#92a0af;line-height:1.8;margin:24px 0 0}
 
-/* REAL MAP - LEAFLET + OPENSTREETMAP */
-
+/* REAL MAP */
 .atlas-section{background:#0b1420}
 .atlas-layout{display:grid;grid-template-columns:1.45fr .75fr;gap:22px;align-items:stretch}
-.map-shell{position:relative;border:1px solid #596272;min-height:530px;background:#101f2d;overflow:hidden}
-.real-map{height:530px;width:100%;background:#172331;z-index:1}
+.map-shell{position:relative;border:1px solid #596272;min-height:515px;background:#101f2d;overflow:hidden}
+.real-map{height:515px;width:100%;background:#172331;z-index:1}
 .real-map .leaflet-tile-pane{filter:grayscale(.55) invert(.93) hue-rotate(180deg) brightness(.79) contrast(1.12)}
 .real-map .leaflet-control-attribution{font:10px var(--sans);background:#101923e8;color:#cfdbdf}
 .real-map .leaflet-control-attribution a{color:#d8b98b}
-.real-map .leaflet-control-zoom a{background:#101923;color:var(--gold);border-color:#495665}
-.real-map .leaflet-control-zoom{border-color:#495665}
-.real-map .leaflet-popup-content-wrapper{background:#101a27;color:#f4eee6;border:1px solid #aa916a;border-radius:3px;box-shadow:0 15px 45px #0009}
+.real-map .leaflet-control-zoom a{background:#101923;color:var(--gold)}
+.real-map .leaflet-popup-content-wrapper{background:#101a27;color:#f4eee6;border:1px solid #aa916a;border-radius:3px}
 .real-map .leaflet-popup-tip{background:#101a27}
 .real-map .leaflet-popup-content{font-family:var(--sans);line-height:1.7}
 .real-map .leaflet-popup-close-button{color:#d8b98b!important}
 .pin-marker{width:18px;height:18px;border-radius:50%;border:3px solid #f0d4a6;background:#b58d58;box-shadow:0 0 0 7px #d8b98b38,0 0 20px #d8b98b88}
 .pin-marker.pending{background:#111b28;border-color:#a4aeb9;box-shadow:0 0 0 5px #9faab82b}
 .pin-marker.selected{background:#f9e5bf;box-shadow:0 0 0 9px #d8b98b55,0 0 28px #d8b98b}
-.map-overline{position:absolute;z-index:500;top:18px;left:18px;padding:12px;background:#080d15e8;border:1px solid #625744;color:var(--gold);font-size:9px;letter-spacing:.14em;text-transform:uppercase;pointer-events:none}
+.map-overline{position:absolute;z-index:500;top:18px;left:18px;padding:12px;background:#080d15e8;border:1px solid #625744;color:var(--gold);font-size:9px;letter-spacing:.13em;text-transform:uppercase;pointer-events:none}
 .map-reset{position:absolute;z-index:500;top:17px;right:16px;background:#111a29;color:var(--cream);border:1px solid var(--gold);padding:10px 13px;font-size:10px}
-.map-reset:hover{background:var(--gold);color:#111b28}
-.map-fallback{height:100%;min-height:450px;display:flex;justify-content:center;align-items:center;text-align:center;padding:40px;color:#d1d9df}
+.map-fallback{height:100%;min-height:450px;display:grid;place-items:center;text-align:center;padding:40px;color:#d1d9df}
 .atlas-info{border:1px solid #726046;padding:35px;background:#101a28;display:flex;flex-direction:column;justify-content:center}
 .atlas-info h3{font:500 clamp(48px,5vw,78px)/.86 var(--serif);margin:19px 0}
 .atlas-info p{font-size:12px;color:var(--muted);line-height:1.9}
-.atlas-info .atlas-role{color:var(--gold);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
-.atlas-info .atlas-date{font-size:10px;color:#bac5cf;letter-spacing:.08em}
+.atlas-info .atlas-role{color:var(--gold);font-size:10px;text-transform:uppercase}
 .atlas-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
 .atlas-chip{border:1px solid #536170;background:transparent;color:#c0cbd5;font-size:11px;padding:11px 14px}
 .atlas-chip.active,.atlas-chip:hover{background:var(--gold);color:#101923;border-color:var(--gold)}
 .atlas-disclaimer{font-size:11px;color:#8f9dab;line-height:1.8;margin:19px 0 0}
 
-/* EXPERTISE */
-
+/* HOME PILLARS */
 .pillars-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .pillar{min-height:395px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden;padding:25px;border:1px solid var(--line);color:var(--cream);text-align:left;background:linear-gradient(145deg,#1a2a3b,#0b131e);transition:.3s}
 .pillar:nth-child(2){background:linear-gradient(145deg,#27343d,#0e1721)}
@@ -168,14 +158,12 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .pillar:nth-child(4){background:linear-gradient(145deg,#292f41,#0b121c)}
 .pillar:before{content:'';position:absolute;top:-25%;left:10%;width:130%;aspect-ratio:1;border:1px solid #d8b98b29;border-radius:50%;transition:.5s}
 .pillar:hover{transform:translateY(-5px);border-color:var(--gold)}
-.pillar:hover:before{transform:scale(.85)}
 .pillar-index{position:absolute;top:24px;left:25px;color:var(--gold);font-size:11px}
 .pillar h3{position:relative;font:500 clamp(27px,2.6vw,38px)/.97 var(--serif);margin:0 0 18px}
 .pillar p{position:relative;font-size:11px;line-height:1.8;color:#acb9c7;margin:0 0 23px}
 .pillar-link{position:relative;font-size:11px;color:var(--gold);font-weight:700}
 
 /* IMPACT */
-
 .impact{background:#ece8df;color:#17212b}
 .impact .eyebrow{color:#91734d}
 .impact .muted{color:#596572}
@@ -185,8 +173,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .metric b{font:500 clamp(55px,6vw,83px)/1 var(--serif)}
 .metric small{display:block;margin-top:12px;color:#596572;font-size:12px}
 
-/* SELECTED WORK */
-
+/* WORK */
 .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .work-card{min-height:285px;display:flex;align-items:end;padding:29px;border:1px solid var(--line);background:linear-gradient(145deg,#1b2c3c,#0d1520);color:var(--cream);text-align:left;position:relative;overflow:hidden;transition:.3s}
 .work-card:nth-child(2){background:linear-gradient(145deg,#2d363b,#111b23)}
@@ -199,7 +186,6 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .work-card p{font-size:12px;color:var(--muted);line-height:1.7}
 
 /* RESEARCH */
-
 .research-list{border-top:1px solid var(--line)}
 .research-row{display:grid;grid-template-columns:60px minmax(0,1fr) auto;align-items:center;gap:20px;border-bottom:1px solid var(--line);padding:21px 0}
 .research-row time{color:var(--gold);font-size:11px}
@@ -211,8 +197,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .poster-btn:hover{background:var(--gold);color:#101923}
 .research-footer{display:flex;justify-content:space-between;gap:20px;margin-top:25px;font-size:11px;color:var(--muted)}
 
-/* ABOUT AND CONTACT */
-
+/* ABOUT / CONTACT */
 .about-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
 .portrait{aspect-ratio:4/5;background:radial-gradient(ellipse at 45% 32%,#35495b,#101923 75%);border:1px solid #685b47;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;z-index:2}
@@ -225,8 +210,57 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .contact-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:13px;margin-top:28px}
 .footer{padding:34px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;color:#8293a2;font-size:10px}
 
-/* MODALS */
+/* NEW: DETAILED PILLAR PAGES */
+.pillar-page{padding-top:78px}
+.detail-hero{position:relative;overflow:hidden;padding:73px 0 80px;min-height:630px;display:flex;align-items:center;border-bottom:1px solid #655640;background:radial-gradient(ellipse at 82% 38%,#283c4d 0%,#101925 38%,#080d15 78%)}
+.detail-hero:after{content:'';position:absolute;width:min(57vw,740px);aspect-ratio:1;border-radius:50%;border:1px solid #d8b98b26;right:-6%;top:-17%;box-shadow:0 0 0 80px #d8b98b08,0 0 0 165px #d8b98b06;pointer-events:none}
+.detail-hero-inner{position:relative;z-index:1;width:100%}
+.breadcrumb{font-size:11px;color:#b1bbc4;display:flex;gap:14px;align-items:center;margin-bottom:50px}
+.breadcrumb a:hover{color:var(--gold)}
+.detail-hero-content{display:grid;grid-template-columns:1.6fr .55fr;align-items:end;gap:30px}
+.detail-hero h1{font:500 clamp(68px,8vw,126px)/.84 var(--serif);letter-spacing:-.05em;margin:26px 0 28px;max-width:1050px}
+.detail-lead{font:500 clamp(20px,2.15vw,29px)/1.25 var(--serif);color:#e1d4bf;max-width:730px;margin:0}
+.detail-hero-index{text-align:right;font:500 clamp(145px,18vw,270px)/.7 var(--serif);color:#d8b98b26;letter-spacing:-.06em}
+.detail-subnav{position:sticky;top:78px;z-index:90;background:#0b141eea;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.detail-subnav-inner{display:flex;gap:10px;align-items:center;overflow-x:auto;scrollbar-width:thin}
+.detail-subnav button{flex:none;background:transparent;border:0;border-bottom:2px solid transparent;color:#c4ced8;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:20px 17px;white-space:nowrap}
+.detail-subnav button:hover,.detail-subnav button:focus-visible{color:var(--gold);border-bottom-color:var(--gold)}
+.detail-subnav .back-home{margin-left:auto;color:var(--gold)}
+.detail-section{padding:100px 0;border-bottom:1px solid var(--line);scroll-margin-top:140px}
+.detail-section.alt{background:#0c1520}
+.detail-two-col{display:grid;grid-template-columns:.72fr 1.28fr;gap:80px;align-items:start}
+.detail-intro-quote{font:500 clamp(44px,5vw,72px)/1 var(--serif);letter-spacing:-.035em;margin:0 0 25px}
+.detail-paragraph{font-size:15px;line-height:2;color:#c2cbd4;margin:0 0 19px}
+.detail-aside{border-left:1px solid #726044;padding-left:30px;margin-top:27px}
+.detail-aside span{display:block;margin-bottom:13px}
+.focus-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:37px}
+.focus-card{border:1px solid var(--line);background:linear-gradient(145deg,#172637,#0e1722);padding:32px;min-height:220px}
+.focus-card small{color:var(--gold);font-size:11px}
+.focus-card h3{font:500 37px/1 var(--serif);margin:30px 0 13px}
+.focus-card p{font-size:12px;color:var(--muted);line-height:1.9}
+.timeline{border-top:1px solid var(--line);margin-top:30px}
+.timeline-item{display:grid;grid-template-columns:190px 1fr;gap:30px;padding:27px 0;border-bottom:1px solid var(--line)}
+.timeline-date{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.07em}
+.timeline-item h3{font:500 33px/1.04 var(--serif);margin:0 0 9px}
+.timeline-item .timeline-org{font-size:11px;color:#d1b98f;display:block;margin-bottom:10px}
+.timeline-item p{color:var(--muted);font-size:12px;line-height:1.85;margin:0;max-width:850px}
+.detail-work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin-top:35px}
+.detail-work-card{padding:31px;border:1px solid #596170;background:#152331;min-height:255px;display:flex;flex-direction:column;align-items:start;text-align:left;color:var(--cream)}
+.detail-work-card:hover{border-color:var(--gold)}
+.detail-work-card h3{font:500 38px/1 var(--serif);margin:18px 0 12px}
+.detail-work-card p{font-size:12px;color:var(--muted);line-height:1.85;flex:1}
+.detail-work-card .text-link{margin-top:23px}
+.detail-evidence{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.evidence-card{border:1px solid var(--line);padding:23px;display:flex;flex-direction:column;gap:11px;background:#0e1926}
+.evidence-card h3{font:500 31px/1 var(--serif);margin:0}
+.evidence-card p{font-size:12px;color:var(--muted);line-height:1.8;margin:0}
+.evidence-card .text-link{margin-top:auto}
+.detail-next{display:flex;justify-content:space-between;gap:25px;align-items:center;padding:70px 0}
+.detail-next h2{font:500 55px/1 var(--serif);margin:8px 0}
+.detail-next a{white-space:nowrap}
+.detail-note{font-size:11px;color:#8f9aa6;line-height:1.8;margin-top:24px}
 
+/* MODALS */
 .modal{position:fixed;inset:0;z-index:400;background:#04070dd8;backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;padding:18px}
 .modal.open{display:flex}
 .modal-panel{width:min(790px,100%);max-height:90svh;overflow-y:auto;position:relative;padding:clamp(29px,5vw,62px);background:#111b29;border:1px solid #6b5c47;box-shadow:0 30px 80px #0009}
@@ -236,9 +270,8 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .modal-panel h2{font:500 clamp(42px,5vw,68px)/.95 var(--serif);margin:16px 0 25px}
 .modal-panel h3{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:26px 0 9px}
 .modal-panel p{font-size:13px;line-height:1.9;color:var(--muted)}
-.modal-sources{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
-.modal-sources a{color:var(--gold);border:1px solid #6c5b41;padding:13px 17px;font-size:11px}
-.modal-sources a:hover{background:var(--gold);color:#101923}
+.modal-sources{margin-top:27px}
+.modal-sources a{color:var(--gold);border:1px solid #6c5b41;padding:13px 17px;font-size:11px;display:inline-block}
 .event-modal-meta{display:flex;flex-wrap:wrap;gap:9px}
 .event-modal-meta span{border:1px solid #41505e;padding:9px 12px;font-size:10px;color:#c6d0d9}
 .poster-viewer{min-height:360px;max-height:70svh;overflow:auto;background:#080e16;border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
@@ -251,23 +284,18 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .poster-footer{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:20px;flex-wrap:wrap}
 .poster-footer small{color:var(--muted)}
 .poster-footer a{color:var(--gold);border:1px solid var(--gold);padding:12px 16px;font-size:11px}
-
-/* ANIMATIONS */
-
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .75s,transform .75s}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* MOBILE */
-
-@media(max-width:1100px){
-  .menu{gap:13px}
+@media(max-width:1150px){
+  .menu{gap:12px}
   .menu a{font-size:9px}
   .event-grid,.pillars-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .pillar{min-height:290px}
   .atlas-layout{grid-template-columns:1fr}
-  .atlas-info{min-height:290px}
+  .atlas-info{min-height:260px}
 }
-
 @media(max-width:760px){
   .header{height:68px;padding:0 5%}
   .menu-toggle{display:block}
@@ -286,12 +314,12 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
   .spotlight-copy{padding:32px 25px}
   .spotlight-copy h3{font-size:58px}
   .spotlight-city{font-size:85px}
-  .event-grid,.pillars-grid,.work-grid,.about-layout{grid-template-columns:1fr}
+  .event-grid,.pillars-grid,.work-grid,.about-layout,.detail-two-col,.focus-grid,.detail-work-grid,.detail-evidence{grid-template-columns:1fr}
   .pillar{min-height:275px}
   .archive-bar{align-items:flex-start}
   .map-shell,.real-map{height:440px;min-height:440px}
-  .map-overline{font-size:8px;max-width:65%;line-height:1.5}
-  .atlas-info{padding:27px;min-height:270px}
+  .map-overline{font-size:8px;max-width:60%;line-height:1.5}
+  .atlas-info{padding:27px;min-height:250px}
   .metrics{grid-template-columns:repeat(2,1fr);gap:15px}
   .metric{border-left:1px solid #b6bcc1!important;padding:15px!important}
   .research-row{grid-template-columns:52px 1fr;gap:12px;align-items:start}
@@ -302,8 +330,22 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
   .portrait{max-width:420px}
   .modal-panel{padding:28px 20px}
   .contact{padding:90px 0}
+  .pillar-page{padding-top:68px}
+  .detail-hero{min-height:590px;padding:65px 0}
+  .detail-hero h1{font-size:clamp(57px,11vw,83px)}
+  .detail-hero-content{grid-template-columns:1fr}
+  .detail-hero-index{display:none}
+  .breadcrumb{margin-bottom:32px}
+  .detail-subnav{top:68px}
+  .detail-subnav button{padding:18px 12px}
+  .detail-section{padding:70px 0}
+  .detail-two-col{gap:18px}
+  .detail-intro-quote{font-size:49px}
+  .focus-card{min-height:unset}
+  .timeline-item{grid-template-columns:1fr;gap:12px}
+  .detail-next{flex-direction:column;align-items:start}
+  .detail-next h2{font-size:45px}
 }
-
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none;transition:none}
@@ -315,7 +357,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 <body>
 
 <header class="header" id="header">
-  <a href="#home" class="brand" aria-label="Mohamed Falfoul home">MF<span>.</span></a>
+  <a class="brand" href="#home" aria-label="Mohamed Falfoul home">MF<span>.</span></a>
   <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
   <nav class="menu" id="menu" aria-label="Main navigation">
     <a href="#home">Home</a>
@@ -330,232 +372,256 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
   </nav>
 </header>
 
-<main>
+<!-- HOMEPAGE -->
+<main id="homePage">
 
-<!-- HERO -->
-
-<section class="hero" id="home">
-  <div class="hero-art" aria-hidden="true">
-    <div class="hero-circle"></div>
-  </div>
-  <div class="wrap" style="width:100%">
-    <div class="hero-content">
-      <span class="eyebrow"><span class="fine-rule"></span>Mohamed Falfoul / Personal Portfolio</span>
-      <h1>Ideas into<br>Action.<br>Voices into <em>Impact.</em></h1>
-      <p class="hero-summary">Working at the intersection of child and adolescent mental health, institutional strategy, capacity building, and international youth advocacy.</p>
-      <div class="hero-actions">
-        <a class="button" href="#global-stage">Discover Global Stage ↗</a>
-        <a class="button ghost" href="#expertise">Explore Expertise ↓</a>
+  <section class="hero" id="home">
+    <div class="hero-art" aria-hidden="true">
+      <div class="hero-circle"></div>
+    </div>
+    <div class="wrap" style="width:100%">
+      <div class="hero-content">
+        <span class="eyebrow">
+          <span class="fine-rule"></span>Mohamed Falfoul / Personal Portfolio
+        </span>
+        <h1>Ideas into<br>Action.<br>Voices into <em>Impact.</em></h1>
+        <p class="hero-summary">
+          Working at the intersection of child and adolescent mental health,
+          institutional strategy, capacity building, and international youth advocacy.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#global-stage">Discover Global Stage ↗</a>
+          <a class="button ghost" href="#expertise">Explore Expertise ↓</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="hero-bottom">
-    <span>Psychiatry · Strategy · Capacity Building · International Advocacy</span>
-    <span>Scroll to discover ↓</span>
-  </div>
-</section>
-
-<!-- GLOBAL STAGE -->
-
-<section class="section" id="global-stage">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <span class="eyebrow">01 / Global Stage</span>
-        <h2 class="section-title">A Voice Across<br><em>Borders.</em></h2>
-      </div>
-      <div class="stage-note">
-        <strong>Ideas travel. Impact follows.</strong>
-        <p class="muted">Selected contributions to international dialogue, youth engagement, scientific exchange and training.</p>
-      </div>
+    <div class="hero-bottom">
+      <span>Psychiatry · Strategy · Capacity Building · International Advocacy</span>
+      <span>Scroll to discover ↓</span>
     </div>
+  </section>
 
-    <article class="spotlight reveal" id="spotlight" aria-label="Featured international engagement"></article>
-
-    <div class="archive-bar">
-      <div>
-        <span class="eyebrow">The Archive</span>
-        <h3>International Engagements</h3>
-      </div>
-      <div class="filters" id="stageFilters" aria-label="Filter engagements">
-        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-        <button class="filter-btn" data-filter="speaking" aria-pressed="false">Speaking</button>
-        <button class="filter-btn" data-filter="facilitation" aria-pressed="false">Facilitation</button>
-        <button class="filter-btn" data-filter="scientific" aria-pressed="false">Scientific</button>
-        <button class="filter-btn" data-filter="forum" aria-pressed="false">Forums</button>
-      </div>
-    </div>
-
-    <div class="event-grid" id="eventGrid"></div>
-
-    <p class="archive-note">
-      The cards distinguish Mohamed's documented role at each event.
-      Addis Ababa is a program listing pending confirmation;
-      New York will be added when event details are verified.
-    </p>
-  </div>
-</section>
-
-<!-- REAL INTERACTIVE MAP -->
-
-<section class="section atlas-section" id="atlas">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <span class="eyebrow">02 / International Footprint</span>
-        <h2 class="section-title">A World of<br><em>Engagement.</em></h2>
-      </div>
-      <p class="muted">A real interactive map: zoom, drag, select a location, and explore the associated engagement.</p>
-    </div>
-
-    <div class="atlas-layout">
-      <div class="map-shell">
-        <div class="map-overline">Live Geographic Atlas / OpenStreetMap</div>
-        <div id="realMap" class="real-map" role="region" aria-label="Interactive map of Mohamed Falfoul's international engagements"></div>
-        <button id="mapReset" class="map-reset" type="button">Reset View ↗</button>
+  <!-- GLOBAL STAGE -->
+  <section class="section" id="global-stage">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">01 / Global Stage</span>
+          <h2 class="section-title">A Voice Across<br><em>Borders.</em></h2>
+        </div>
+        <div class="stage-note">
+          <strong>Ideas travel. Impact follows.</strong>
+          <p class="muted">
+            Selected contributions to international dialogue,
+            youth engagement, scientific exchange and training.
+          </p>
+        </div>
       </div>
 
-      <aside class="atlas-info" id="atlasInfo" aria-live="polite"></aside>
-    </div>
+      <article class="spotlight reveal" id="spotlight" aria-label="Featured international engagement"></article>
 
-    <div class="atlas-list" id="atlasList" aria-label="Select an international engagement"></div>
-
-    <p class="atlas-disclaimer">
-      Interactive street-map data: © OpenStreetMap contributors. City markers
-      are approximate, not venue addresses. Addis Ababa is shown as an
-      unconfirmed program listing. Map requires an internet connection.
-    </p>
-  </div>
-</section>
-
-<!-- EXPERTISE -->
-
-<section class="section" id="expertise">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <span class="eyebrow">03 / Multidisciplinary Expertise</span>
-        <h2 class="section-title">Four Disciplines.<br><em>One Purpose.</em></h2>
+      <div class="archive-bar">
+        <div>
+          <span class="eyebrow">The Archive</span>
+          <h3>International Engagements</h3>
+        </div>
+        <div class="filters" id="stageFilters" aria-label="Filter engagements">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="speaking" aria-pressed="false">Speaking</button>
+          <button class="filter-btn" data-filter="facilitation" aria-pressed="false">Facilitation</button>
+          <button class="filter-btn" data-filter="scientific" aria-pressed="false">Scientific</button>
+          <button class="filter-btn" data-filter="forum" aria-pressed="false">Forums</button>
+        </div>
       </div>
-      <p class="muted">Clinical knowledge, institutional strategy, training design and leadership — four complementary dimensions of Mohamed's work.</p>
+
+      <div class="event-grid" id="eventGrid"></div>
+      <p class="archive-note">
+        Roles are shown as documented; Addis Ababa remains an advance-program listing
+        pending confirmation. New York can be added once the event and role are verified.
+      </p>
     </div>
-    <div class="pillars-grid" id="pillarGrid"></div>
-  </div>
-</section>
+  </section>
 
-<!-- IMPACT -->
-
-<section class="section impact" id="impact">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <span class="eyebrow">04 / Impact at a Glance</span>
-        <h2 class="section-title">Turning Expertise<br>Into Lasting Change.</h2>
+  <!-- GLOBAL ATLAS -->
+  <section class="section atlas-section" id="atlas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">02 / International Footprint</span>
+          <h2 class="section-title">A World of<br><em>Engagement.</em></h2>
+        </div>
+        <p class="muted">
+          A real OpenStreetMap: zoom, drag, select a location
+          and explore its engagement.
+        </p>
       </div>
-      <p class="muted">Selected training figures from the working CV; final validation with Mohamed is pending.</p>
-    </div>
-    <div class="metrics">
-      <div class="metric"><b>1,190+</b><small>Training hours delivered</small></div>
-      <div class="metric"><b>2,500+</b><small>Participants trained</small></div>
-      <div class="metric"><b>78+</b><small>Sessions facilitated</small></div>
-      <div class="metric"><b>20+</b><small>Institutions supported</small></div>
-    </div>
-  </div>
-</section>
 
-<!-- SELECTED WORK -->
-
-<section class="section" id="work">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <span class="eyebrow">05 / Selected Work</span>
-        <h2 class="section-title">From Vision<br>to Impact.</h2>
+      <div class="atlas-layout">
+        <div class="map-shell">
+          <div class="map-overline">Interactive Geographic Atlas / OpenStreetMap</div>
+          <div id="realMap" class="real-map" role="region" aria-label="Interactive map of international engagements"></div>
+          <button class="map-reset" id="mapReset">Reset View ↗</button>
+        </div>
+        <aside class="atlas-info" id="atlasInfo" aria-live="polite"></aside>
       </div>
-      <p class="muted">Initiatives in organizational governance, youth leadership, clinical education and capacity building.</p>
+
+      <div class="atlas-list" id="atlasList"></div>
+      <p class="atlas-disclaimer">
+        © OpenStreetMap contributors. Markers indicate approximate city centers,
+        not event venue addresses. Map requires an internet connection.
+        Addis Ababa is an unconfirmed program listing.
+      </p>
     </div>
-    <div class="work-grid" id="workGrid"></div>
-  </div>
-</section>
+  </section>
 
-<!-- RESEARCH -->
-
-<section class="section" id="research">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <span class="eyebrow">06 / Scientific Research</span>
-        <h2 class="section-title">Evidence. Ideas.<br><em>Contributions.</em></h2>
+  <!-- FOUR PILLARS -->
+  <section class="section" id="expertise">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">03 / Multidisciplinary Expertise</span>
+          <h2 class="section-title">Four Disciplines.<br><em>One Purpose.</em></h2>
+        </div>
+        <p class="muted">
+          Explore each discipline in depth, from Mohamed's professional journey
+          to selected projects, methods and supporting evidence.
+        </p>
       </div>
-      <p class="muted">Scientific posters and co-authored contributions in child and adolescent psychiatry. Click a poster to view the full image or PDF once available.</p>
+      <div class="pillars-grid" id="pillarGrid"></div>
     </div>
-    <div class="research-list" id="researchList"></div>
-    <div class="research-footer">
-      <span>Posters are not presented as peer-reviewed journal articles.</span>
-      <span id="researchCount"></span>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ABOUT -->
+  <!-- IMPACT -->
+  <section class="section impact" id="impact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">04 / Impact at a Glance</span>
+          <h2 class="section-title">Turning Expertise<br>Into Lasting Change.</h2>
+        </div>
+        <p class="muted">
+          Selected figures reported in Mohamed's working CV.
+          Final validation is pending.
+        </p>
+      </div>
+      <div class="metrics">
+        <div class="metric"><b>1,190+</b><small>Training hours delivered</small></div>
+        <div class="metric"><b>2,500+</b><small>Participants trained</small></div>
+        <div class="metric"><b>78+</b><small>Sessions facilitated</small></div>
+        <div class="metric"><b>20+</b><small>Institutions supported</small></div>
+      </div>
+    </div>
+  </section>
 
-<section class="section" id="about">
-  <div class="wrap about-layout">
-    <div class="portrait reveal">
-      <span class="portrait-fallback">MF.</span>
-      <img id="portraitImage"
-        src="https://tedx.universitesesame.com/assets/img/speakers/Mohamed%20Falfoul.webp"
-        alt="Portrait of Mohamed Falfoul from TEDxSESAMEUniversity"
-        loading="lazy">
-      <span class="portrait-credit">
-        Image: TEDxSESAMEUniversity · Reuse permission to confirm
-      </span>
+  <!-- SELECTED WORK -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">05 / Selected Work</span>
+          <h2 class="section-title">From Vision<br>to Impact.</h2>
+        </div>
+        <p class="muted">
+          Initiatives in governance, youth leadership,
+          clinical learning and organizational capacity.
+        </p>
+      </div>
+      <div class="work-grid" id="workGrid"></div>
     </div>
-    <div class="about-text reveal">
-      <span class="eyebrow">07 / About Mohamed</span>
-      <h2 class="section-title">One Career.<br><em>Multiple Dimensions.</em></h2>
-      <p>Mohamed Falfoul is a medical resident in Child & Adolescent Psychiatry whose professional journey also spans strategic consulting, organizational development, capacity building and youth advocacy.</p>
-      <p>His work bridges clinical experience and institutional thinking, connecting scientific knowledge with policy, program design and participatory leadership.</p>
-      <p>From hospital-based education to youth-centered international forums, his engagements focus on strengthening people, organizations and systems.</p>
-      <a class="arrow-link"
-        href="https://www.linkedin.com/in/mohamed-falfoul-702b377b"
-        target="_blank" rel="noopener noreferrer">
-        Explore Professional Profile ↗
-      </a>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">06 / Scientific Research</span>
+          <h2 class="section-title">Evidence. Ideas.<br><em>Contributions.</em></h2>
+        </div>
+        <p class="muted">
+          Scientific posters and co-authored contributions in child and adolescent
+          psychiatry. Click to view original posters once uploaded.
+        </p>
+      </div>
+      <div class="research-list" id="researchList"></div>
+      <div class="research-footer">
+        <span>Posters are not represented as peer-reviewed journal articles.</span>
+        <span id="researchCount"></span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap about-layout">
+      <div class="portrait reveal">
+        <span class="portrait-fallback">MF.</span>
+        <img
+          id="portraitImage"
+          src="https://tedx.universitesesame.com/assets/img/speakers/Mohamed%20Falfoul.webp"
+          alt="Portrait of Mohamed Falfoul published by TEDxSESAMEUniversity"
+          loading="lazy">
+        <span class="portrait-credit">
+          Image: TEDxSESAMEUniversity · Reuse permission to confirm
+        </span>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">07 / About Mohamed</span>
+        <h2 class="section-title">One Career.<br><em>Multiple Dimensions.</em></h2>
+        <p>
+          Mohamed Falfoul is a medical resident in Child & Adolescent Psychiatry
+          whose professional journey also spans strategic consulting,
+          organizational development, capacity building and youth advocacy.
+        </p>
+        <p>
+          His work bridges clinical experience and institutional thinking,
+          connecting scientific knowledge with policy, program design and
+          participatory leadership.
+        </p>
+        <p>
+          From hospital-based education to youth-centered international forums,
+          his engagements focus on strengthening people, organizations and systems.
+        </p>
+        <a class="text-link"
+           href="https://www.linkedin.com/in/mohamed-falfoul-702b377b"
+           target="_blank" rel="noopener noreferrer">
+          Explore Professional Profile ↗
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOUR DETAILED PILLAR PAGES -->
+<main id="pillarPage" class="pillar-page" hidden aria-live="polite"></main>
 
 <!-- CONTACT -->
-
 <section class="contact" id="contact">
   <div class="wrap">
-    <span class="eyebrow">08 / Connect & Collaborate</span>
+    <span class="eyebrow">Connect & Collaborate</span>
     <h2>Let's Create<br><em>Meaningful Impact.</em></h2>
-    <p class="muted">Speaking · Strategic Collaboration · Research · Capacity Building</p>
+    <p class="muted">Speaking · Strategy · Research · Capacity Building</p>
     <div class="contact-actions">
       <a class="button" href="mailto:falfoul.md@gmail.com">Start a Conversation ↗</a>
       <a class="button ghost"
-        href="https://www.linkedin.com/in/mohamed-falfoul-702b377b"
-        target="_blank" rel="noopener noreferrer">
+         href="https://www.linkedin.com/in/mohamed-falfoul-702b377b"
+         target="_blank" rel="noopener noreferrer">
         Connect on LinkedIn ↗
       </a>
     </div>
   </div>
 </section>
-</main>
 
 <footer class="wrap footer">
   <span>© <span id="year"></span> Mohamed Falfoul · All rights reserved.</span>
-  <span>Portfolio preview · Content and imagery pending final approval</span>
+  <span>Portfolio preview · Figures, institutions and imagery pending final approval</span>
   <a href="https://www.instagram.com/falfoulmed/"
-    target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+     target="_blank" rel="noopener noreferrer">Instagram ↗</a>
 </footer>
 
-<!-- DETAILS MODAL -->
-
-<div class="modal" id="detailModal" role="dialog"
-  aria-modal="true" aria-labelledby="detailTitle" aria-hidden="true">
+<!-- WORK DETAILS MODAL -->
+<div class="modal" id="detailModal" role="dialog" aria-modal="true"
+     aria-labelledby="detailTitle" aria-hidden="true">
   <div class="modal-panel">
     <button class="modal-close" data-close aria-label="Close">×</button>
     <span class="eyebrow" id="detailTag"></span>
@@ -565,13 +631,12 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 </div>
 
 <!-- EVENT MODAL -->
-
-<div class="modal" id="eventModal" role="dialog"
-  aria-modal="true" aria-labelledby="eventModalTitle" aria-hidden="true">
+<div class="modal" id="eventModal" role="dialog" aria-modal="true"
+     aria-labelledby="eventModalTitle" aria-hidden="true">
   <div class="modal-panel">
     <button class="modal-close" data-close aria-label="Close">×</button>
     <span class="eyebrow">Global Stage / Event Profile</span>
-    <h2 id="eventModalTitle" style="padding-right:30px"></h2>
+    <h2 id="eventModalTitle"></h2>
     <div class="event-modal-meta" id="eventModalMeta"></div>
     <h3>Mohamed's Role</h3>
     <p id="eventModalRole"></p>
@@ -581,10 +646,9 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
   </div>
 </div>
 
-<!-- RESEARCH POSTER MODAL -->
-
-<div class="modal" id="posterModal" role="dialog"
-  aria-modal="true" aria-labelledby="posterModalTitle" aria-hidden="true">
+<!-- POSTER MODAL -->
+<div class="modal" id="posterModal" role="dialog" aria-modal="true"
+     aria-labelledby="posterModalTitle" aria-hidden="true">
   <div class="modal-panel wide">
     <button class="modal-close" data-close aria-label="Close poster">×</button>
     <span class="eyebrow">Scientific Archive / Research Poster</span>
@@ -592,40 +656,21 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
     <p id="posterModalMeta"></p>
     <div class="poster-viewer" id="posterViewer"></div>
     <div class="poster-footer">
-      <small>Scientific work by Mohamed Falfoul and respective collaborators.</small>
-      <a id="posterFullLink" target="_blank"
-        rel="noopener noreferrer" style="display:none">
-        Open Full Poster ↗
-      </a>
+      <small>Scientific work by Mohamed Falfoul and his respective collaborators.</small>
+      <a id="posterFullLink" target="_blank" rel="noopener noreferrer"
+         style="display:none">Open Full Poster ↗</a>
     </div>
   </div>
 </div>
 
-<!-- LEAFLET -->
-
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""></script>
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
 
 <script>
 'use strict';
 
-/*
-THE GLOBAL FIGURE — V3
-
-No backend, no tokens, no paid hosting.
-
-To add photos:
-Upload images to an "images" folder.
-Update STAGE_IMAGES below.
-
-To add posters:
-Upload files to a "posters" folder.
-Use the fileKey filenames below.
-*/
-
-/* PHOTOS */
-
+/* PHOTO CONFIGURATION */
 const STAGE_IMAGES = {
   tedx:'https://tedx.universitesesame.com/assets/img/speakers/Mohamed%20Falfoul.webp',
   moscow:'',
@@ -635,23 +680,21 @@ const STAGE_IMAGES = {
   addis:''
 };
 
-/* GLOBAL STAGE DATA */
-
+/* INTERNATIONAL ENGAGEMENTS */
 const events = [
   {
     id:'tedx',
     city:'Tunis',
     country:'Tunisia',
     year:'2026',
-    date:'2026 · Exact event date to confirm',
+    date:'2026 · Date to confirm',
     title:'TEDxSESAMEUniversity',
-    theme:'Beyond the Script',
     category:'speaking',
     role:'Listed Speaker',
-    short:'A TEDx platform for ideas, experiences and perspectives.',
-    description:'Mohamed is listed among the speakers at TEDxSESAMEUniversity 2026 under the theme Beyond the Script. The exact talk title and a recording will be added when confirmed.',
+    short:'Ideas and perspectives at TEDxSESAMEUniversity: Beyond the Script.',
+    description:'Mohamed is listed as a speaker on the official TEDxSESAMEUniversity website. Individual talk details and the recording remain to be confirmed.',
     source:'https://tedx.universitesesame.com/',
-    sourceLabel:'Official TEDx Website',
+    sourceLabel:'Official TEDx website',
     verified:true,
     lat:36.8065,
     lon:10.1815
@@ -663,11 +706,10 @@ const events = [
     year:'2026',
     date:'19 September 2026',
     title:'Generation of Unity',
-    theme:'Human 2035: Artificial Intelligence and Society',
     category:'forum',
     role:'Youth Debate Participant',
-    short:'International dialogue on the opportunities and risks of AI.',
-    description:'Mohamed is named by the World Peoples Assembly among participants in a Human 2035 youth debate during the Generation of Unity forum in Moscow, discussing the social and ethical consequences of artificial intelligence.',
+    short:'International dialogue on AI and the future of young people.',
+    description:'Mohamed is named among participants in a Human 2035 youth discussion at the Generation of Unity forum. The report describes debate about the opportunities and social and ethical risks of AI.',
     source:'https://world-assembly.org/en/news/ai-will-replace-your-hairdresser-but-not-anytime-soon-young-people-discuss-the-benefits-and-risks-of-working-with-artificial-intelligence',
     sourceLabel:'World Peoples Assembly',
     verified:true,
@@ -679,15 +721,14 @@ const events = [
     city:'Doha',
     country:'Qatar',
     year:'2026',
-    date:'2026 · Exact event date to confirm',
+    date:'2026 · Date to confirm',
     title:'Empower 2026',
-    theme:'Youth Declaration & Eco-Resilience',
     category:'facilitation',
     role:'Workshop Facilitator & Trainer',
-    short:'Youth declaration co-creation and eco-resilience education.',
-    description:'In his public professional account Mohamed describes facilitating Youth Declaration co-creation and delivering Eco-Resilience: Turning Climate Anxiety into Green Action at Empower 2026, linked to Education Above All.',
+    short:'Youth Declaration co-creation and eco-resilience training.',
+    description:'In his public professional account, Mohamed describes facilitating Youth Declaration co-creation and delivering Eco-Resilience: Turning Climate Anxiety into Green Action at Empower 2026, linked to Education Above All.',
     source:'https://www.linkedin.com/posts/mohamed-falfoul-702b377b_empower2026-educationaboveall-greenentrepreneurship-activity-7460657610917310464-xFHR',
-    sourceLabel:'Mohamed’s Public Post',
+    sourceLabel:'Mohamed’s public LinkedIn post',
     verified:true,
     lat:25.2854,
     lon:51.531
@@ -699,11 +740,10 @@ const events = [
     year:'2025',
     date:'5–8 October 2025',
     title:'World Congress of Psychiatry',
-    theme:'Early Career Psychiatry',
     category:'scientific',
     role:'ECP Session Presenter · Media Committee Contributor',
-    short:'Scientific exchange and early-career psychiatric engagement.',
-    description:'Mohamed’s draft CV records a presentation at an Early Career Psychiatrist session during the 25th World Congress of Psychiatry in Prague, alongside work on its media committee.',
+    short:'Scientific exchange and early-career psychiatric participation.',
+    description:'His working CV lists a dedicated Early Career Psychiatrist session presentation at the 25th World Congress of Psychiatry in Prague and contribution to the congress Media Committee.',
     source:'',
     sourceLabel:'Working CV',
     verified:true,
@@ -717,11 +757,10 @@ const events = [
     year:'2026',
     date:'1–4 July 2026',
     title:'IACAPAP World Congress',
-    theme:'Child & Adolescent Psychiatry Research',
     category:'scientific',
     role:'Scientific Poster Presenter',
-    short:'Research on parental factors in child psychiatry settings.',
-    description:'The draft CV lists two poster presentations at the 27th IACAPAP World Congress in Hamburg, including research on maternal alexithymia and parenting styles.',
+    short:'Posters on parental factors in child psychiatry settings.',
+    description:'The working CV records two research poster presentations at the 27th IACAPAP World Congress, on maternal alexithymia and parenting styles.',
     source:'',
     sourceLabel:'Working CV',
     verified:true,
@@ -735,78 +774,459 @@ const events = [
     year:'2026',
     date:'29–30 July 2026',
     title:'World Public Summit: Africa',
-    theme:'The New Generation of Leaders',
     category:'forum',
     role:'Program-Listed Panelist · Attendance Unconfirmed',
-    short:'Named in an advance panel program on young leaders.',
-    description:'Mohamed was named in an advance program for the panel The New Generation of Leaders: Education, Employment and International Cooperation. This is a documented listing, not confirmation of actual attendance or a completed presentation.',
+    short:'Named in the advance program for a panel on the next generation of leaders.',
+    description:'Mohamed was named in an advance program for The New Generation of Leaders: Education, Employment and International Cooperation. Actual attendance and delivery of a talk are not yet independently established.',
     source:'https://world-assembly.org/en/news/vsemirnyy-obshchestvennyy-sammit-afrika-novyy-mir-afrika-v-formirovanii-obshchego-budushchego-proydyot-v-addis-abebe',
-    sourceLabel:'Official Advance Program',
+    sourceLabel:'Official advance program',
     verified:false,
     lat:9.03,
     lon:38.74
   }
 ];
 
-/* FOUR PILLARS */
+/* FOUR DETAILED PROFESSIONAL PILLARS */
 
 const pillars = [
+
+  /* PILLAR 1 — PSYCHIATRY */
   {
+    slug:'psychiatry',
     number:'01',
     title:'Child & Adolescent Psychiatry',
-    short:'Clinical Practice · Neurodevelopment · Research & Medical Education',
-    sections:[
-      ['Clinical Practice','Medical resident across inpatient, outpatient and emergency settings in child and adolescent psychiatry. Rotations in Tunis, Manouba, Monastir and Sfax are listed in the working CV.'],
-      ['Research','Scientific posters covering ADHD, autism, childhood trauma, parental factors and clinical profiles.'],
-      ['Medical Education','Medical studies at the Faculty of Medicine of Sfax and postgraduate education in perinatal mental health, school and university medicine, and therapeutic patient education.'],
-      ['Scientific Engagement','Coordinated seven sessions on AI and child development for 27 residents and clinicians; psychoeducation and scientific outreach.']
-    ]
+    short:'Clinical practice · Research · Medical education',
+    strap:'Understanding young minds. Supporting families. Advancing care.',
+    lead:'A clinical practice informed by child development, interdisciplinary care and scientific inquiry.',
+    intro:[
+      'Mohamed is a medical resident in Child & Adolescent Psychiatry, with clinical experience across hospital departments in Tunis, Manouba, Monastir and Sfax. His work brings together clinical assessment, inpatient and outpatient follow-up, emergency care and multidisciplinary decision-making.',
+      'Alongside his clinical pathway, he contributes to scientific posters and professional education on neurodevelopmental conditions, trauma, family-centered approaches and the ethical implications of new technologies in child psychiatry.'
+    ],
+    focus:[
+      [
+        'Clinical assessment & care',
+        'Child and adolescent psychiatric, developmental and behavioral presentations across hospital settings.'
+      ],
+      [
+        'Neurodevelopment',
+        'Clinical assessment and psychoeducational tools in ADHD, autism and related developmental challenges.'
+      ],
+      [
+        'Risk, trauma & safeguarding',
+        'Crisis assessment, school post-vention and child-protection considerations described in the working CV.'
+      ],
+      [
+        'Scientific inquiry',
+        'Poster presentations and collaborative research on ADHD, autism, trauma and parental factors.'
+      ]
+    ],
+    journey:[
+      [
+        'Jul 2026 – Present',
+        'Child & Adolescent Psychiatry Residency',
+        'Sfax, Tunisia',
+        'Clinical assessments, adolescent care, emergency and interdisciplinary work. Exact hospital naming is pending CV validation.'
+      ],
+      [
+        'Jan – Jun 2026',
+        'Child & Adolescent Psychiatry Residency',
+        'Monastir, Tunisia',
+        'Multidisciplinary assessment and follow-up of children and adolescents. Exact hospital naming is pending CV validation.'
+      ],
+      [
+        'Jul 2025 – Jan 2026',
+        'Resident · Razi University Hospital',
+        'Manouba, Tunisia',
+        'Outpatient and inpatient care, psychoeducational profiles and team-based case review.'
+      ],
+      [
+        'Jan – Jun 2025',
+        'Resident · Military Hospital',
+        'Tunis, Tunisia',
+        'Child psychiatry assessments, somatic and psychiatric emergency coverage and multidisciplinary case discussion.'
+      ],
+      [
+        '2018 – 2024',
+        'Medical Studies',
+        'Faculty of Medicine of Sfax',
+        'Medical education preceding specialty training.'
+      ]
+    ],
+    projects:[
+      {
+        label:'Clinical Education',
+        title:'Artificial Intelligence & Child Development',
+        description:'Coordinated a seven-session clinical learning series at Razi Hospital for 27 residents and clinicians; delivered two presentations.',
+        type:'work',
+        index:2
+      },
+      {
+        label:'Family Outreach',
+        title:'Screen Exposure & Childhood',
+        description:'Psychoeducational session for 30+ families at the International School of Carthage, according to the CV.',
+        type:'info',
+        text:'A structured family-facing session on screen use and risks among children and adolescents.'
+      },
+      {
+        label:'Scientific Exchange',
+        title:'IACAPAP World Congress',
+        description:'Two poster presentations in Hamburg in 2026 on parental factors in child psychiatry.',
+        type:'event',
+        id:'hamburg'
+      }
+    ],
+    evidenceTitle:'Scientific Contributions',
+    evidenceIntro:'Select a contribution to view its original poster when the approved document is available.',
+    researchIds:[0,1,2,3,4,5],
+    evidence:[],
+    note:'This page describes professional activities, not patient cases or individual clinical outcomes.'
   },
+
+  /* PILLAR 2 — STRATEGY */
   {
+    slug:'strategy',
     number:'02',
     title:'Strategy & Organizational Development',
-    short:'Youth Strategy · Institutional Governance · Program & Policy Design',
-    sections:[
-      ['Youth Strategy','Strategic advisory contributions through the Bureau Consultant de la Jeunesse Tunisienne, linked to the Ministry of Youth and Sports in Tunisia.'],
-      ['Organizational Development','Strategic repositioning and governance design for YOUTH CLUBs, including activity across ten regions.'],
-      ['Program Design','Designed Wallah We Can Junior, with curriculum, leadership pathways and supervision for 18 participants.'],
-      ['Governance','Developed democratic governance structures, internal regulations and organizational documentation.'],
-      ['Education Systems','Contributed to meaningful student involvement and youth participation policy processes.']
-    ]
+    short:'Institutional strategy · Governance · Youth policy',
+    strap:'From institutional purpose to practical systems.',
+    lead:'Helping mission-driven organizations clarify direction, build governance and turn youth priorities into programs.',
+    intro:[
+      'Mohamed’s strategic consulting experience covers youth policy, organizational development and education-focused institutions. His work includes translating institutional priorities into workable governance arrangements, programs, curricula and advocacy documents.',
+      'The current CV names mandates with BCJT / Tunisia’s Ministry of Youth and Sports, YOUTH CLUBs, Wallah We Can Junior and Being Learning and Support Network, as well as policy contributions through youth and medical-student platforms.'
+    ],
+    focus:[
+      [
+        'Youth strategy',
+        'Youth engagement priorities, national frameworks and linking policy direction with implementation.'
+      ],
+      [
+        'Governance design',
+        'Decision-making arrangements, clear roles, internal regulations and accountable institutional structures.'
+      ],
+      [
+        'Program architecture',
+        'Training pathways, leadership development programs and sustainable youth-led action models.'
+      ],
+      [
+        'Education and advocacy policy',
+        'Contributions to discussions on student participation, technology in education and evidence-informed advocacy.'
+      ]
+    ],
+    journey:[
+      [
+        'Feb 2024 – Feb 2026',
+        'Youth Strategy Consultant',
+        'BCJT / Ministry of Youth and Sports, Tunisia',
+        'Advisory contributions to youth engagement priorities and the national youth strategy framework.'
+      ],
+      [
+        'Mar 2024 – Mar 2025',
+        'Program Designer & Strategic Consultant',
+        'Wallah We Can Junior',
+        'Designed a structured youth empowerment program and supervised 18 young participants.'
+      ],
+      [
+        'Sep 2020 – Aug 2022',
+        'Youth Strategic Development Consultant',
+        'YOUTH CLUBs Association',
+        'Organizational repositioning and alignment of priorities across ten regions.'
+      ],
+      [
+        'Jan 2017 – Aug 2022',
+        'Governance & Internal Regulations Consultant',
+        'YOUTH CLUBs Association',
+        'Developed general assembly governance and documentation across seven organizational units.'
+      ],
+      [
+        'Mar 2026',
+        'Organizational Development Facilitator',
+        'Being Learning and Support Network',
+        'Governance, wellbeing and risk-management Learning Day with a reference booklet.'
+      ],
+      [
+        'Jan 2024',
+        'Youth Consultation Contributor',
+        'UNESCO Arab World Youth Consultation',
+        'Input on technology in education during a regional youth consultation.'
+      ]
+    ],
+    projects:[
+      {
+        label:'Institutional Design',
+        title:'YOUTH CLUBs: Building Governance',
+        description:'Democratic governance model and operating documentation for seven organizational units.',
+        type:'work',
+        index:0
+      },
+      {
+        label:'Program Design',
+        title:'Wallah We Can Junior',
+        description:'A structured leadership and empowerment pathway for 18 young participants.',
+        type:'work',
+        index:1
+      },
+      {
+        label:'Facilitation & Tools',
+        title:'Being Network Learning Day',
+        description:'Governance, wellbeing and risk-management facilitation with a practical reference booklet.',
+        type:'info',
+        text:'The CV reports a facilitated learning day and a structured booklet summarizing governance, wellbeing and risk-management practices.'
+      }
+    ],
+    evidenceTitle:'Selected Outputs',
+    evidenceIntro:'Tangible examples of the work described in the draft CV, rather than unverified organizational performance claims.',
+    researchIds:[],
+    evidence:[
+      [
+        'National youth strategy',
+        'Contributions to a youth-focused strategy framework through BCJT / the Ministry of Youth and Sports.'
+      ],
+      [
+        'Seven organizational units',
+        'Governance and operational documentation for YOUTH CLUBs.'
+      ],
+      [
+        'Six training levels',
+        'Architecture for a structured institutional training curriculum, developed across 2018–2025.'
+      ],
+      [
+        'Education consultation',
+        'Youth-centered input to a UNESCO Arab World consultation on technology in education.'
+      ]
+    ],
+    note:'Several older mandates and proposed claims of UNESCO/Deakin accreditation need documentary validation; they are not presented here as confirmed awards.'
   },
+
+  /* PILLAR 3 — TRAINING */
   {
+    slug:'training',
     number:'03',
     title:'Training & Capacity Building',
-    short:'Curriculum Design · Facilitation · Training of Trainers',
-    sections:[
-      ['Training Portfolio','The working CV reports 1,190+ training hours, 2,500+ participants, 78+ sessions and 20+ institutions. Figures await Mohamed’s confirmation.'],
-      ['Focus Areas','Human rights, child protection, civic engagement, advocacy, mental health, first aid, education and leadership.'],
-      ['Curriculum Architecture','Designed structured learning pathways, a six-level institutional curriculum and training-of-trainers approaches.'],
-      ['Selected Training','Online mental health training for 210 students in collaboration with Education Above All, BLS training for 32 teachers and screen-use psychoeducation for over 30 families.']
-    ]
+    short:'Facilitation · Curriculum design · Training of trainers',
+    strap:'Building capacity. Multiplying impact.',
+    lead:'Designing learning experiences that help people move from understanding to action.',
+    intro:[
+      'Training is a sustained part of Mohamed’s career. His current CV reports more than 1,190 training hours, over 2,500 participants and 78+ sessions across more than 20 institutions. These are draft figures that Mohamed must validate before a public launch.',
+      'His practice includes participatory facilitation, structured curriculum development and Training of Trainers methods, with themes spanning youth leadership, human rights, child protection, public health, organizational strategy and mental health.'
+    ],
+    focus:[
+      [
+        'Learning design',
+        'Structured curricula, learning levels, session sequences and competency-centered facilitation.'
+      ],
+      [
+        'Training of Trainers',
+        'Methods and systems that help organizations develop their own facilitators.'
+      ],
+      [
+        'Youth & civic engagement',
+        'Human rights, advocacy, participation, leadership and civic education.'
+      ],
+      [
+        'Health & wellbeing',
+        'Mental health awareness, first aid, child protection and family-facing education.'
+      ]
+    ],
+    journey:[
+      [
+        '2018 – 2025',
+        'Training System & Curriculum Designer',
+        'YOUTH CLUBs Association',
+        'Designed institutional pathways, facilitation architecture and a six-level curriculum.'
+      ],
+      [
+        '2024 – 2025',
+        'Youth Program Training & Supervision',
+        'Wallah We Can Junior',
+        'Guided 18 young participants through practical leadership, advocacy and strategy activities.'
+      ],
+      [
+        'Date to confirm',
+        'Mental Health Awareness Training',
+        'Education Above All collaboration',
+        'Online training reaching 210 students, according to the working CV.'
+      ],
+      [
+        'Date to confirm',
+        'Basic Life Support Training',
+        'Manouba region',
+        'Delivered BLS training to 32 teachers.'
+      ],
+      [
+        'Date to confirm',
+        'Screen-Use Psychoeducation',
+        'International School of Carthage',
+        'Psychoeducation for more than 30 families.'
+      ]
+    ],
+    projects:[
+      {
+        label:'Learning System',
+        title:'A Six-Level Training Curriculum',
+        description:'Institutional learning pathways and facilitation architecture developed for YOUTH CLUBs.',
+        type:'info',
+        text:'The CV describes a structured six-level curriculum and a Training of Trainers approach, developed to replace fragmented ad-hoc workshops.'
+      },
+      {
+        label:'Youth Learning',
+        title:'Wallah We Can Junior',
+        description:'Training and supervision of 18 participants through a structured leadership journey.',
+        type:'work',
+        index:1
+      },
+      {
+        label:'International Facilitation',
+        title:'Eco-Resilience in Doha',
+        description:'Training and youth declaration facilitation at Empower 2026.',
+        type:'event',
+        id:'doha'
+      }
+    ],
+    evidenceTitle:'Delivery Highlights',
+    evidenceIntro:'Examples of reported training delivery. Global totals await confirmation.',
+    researchIds:[],
+    evidence:[
+      ['1,190+ hours','Reported training hours delivered across thematic areas.'],
+      ['2,500+ participants','Reported cumulative training reach.'],
+      ['210 students','Mental health awareness training in collaboration with Education Above All.'],
+      ['32 teachers','Basic Life Support training in the Manouba region.'],
+      ['30+ families','Screen exposure psychoeducation for parents at International School of Carthage.'],
+      ['78+ sessions','Reported facilitated sessions in the draft CV.']
+    ],
+    note:'All figures are taken from a working CV and should be confirmed before external promotion.'
   },
+
+  /* PILLAR 4 — LEADERSHIP */
   {
+    slug:'leadership',
     number:'04',
     title:'Leadership, Advocacy & International Representation',
-    short:'Global Dialogue · Youth Advocacy · Public Engagement',
-    sections:[
-      ['International Engagement','Participation, facilitation and presentations at international youth, scientific and public-policy platforms; documented roles appear in Global Stage.'],
-      ['Advocacy','Contributions to educational inclusion, youth rights, institutional participation and mental health awareness.'],
-      ['Networks','Listed affiliations include WPA Early Career Psychiatrists, IACAPAP Early Career Group and GMHAN. Membership is not employment.'],
-      ['Public Engagement','TEDx, youth forum discussions, scientific conferences and broadcast commentary on mental health.']
-    ]
+    short:'International dialogue · Advocacy · Representation',
+    strap:'Contributing to conversations beyond borders.',
+    lead:'A commitment to youth participation, public dialogue and cross-border exchange.',
+    intro:[
+      'Mohamed’s professional portfolio includes youth advocacy, public speaking, training facilitation and participation in international professional and policy spaces. These roles differ: presenting scientific work, facilitating a workshop and joining a youth forum are not interchangeable.',
+      'His working CV records advocacy contributions to Education Above All since 2019, policy input in regional consultations, and participation in professional networks. The Global Stage archive provides specific documented events and identifies uncertainty where participation is not independently confirmed.'
+    ],
+    focus:[
+      [
+        'International dialogue',
+        'Participation in global and regional events on education, youth and emerging societal issues.'
+      ],
+      [
+        'Advocacy & representation',
+        'Youth-centered contributions to policies, declarations and civic participation processes.'
+      ],
+      [
+        'Speaking & facilitation',
+        'Public presentations, research communication, workshops and collaborative discussion.'
+      ],
+      [
+        'Professional communities',
+        'Engagement in early-career psychiatric and mental health networks, distinguished from institutional employment.'
+      ]
+    ],
+    journey:[
+      [
+        '2019 – Present',
+        'Youth Advocate',
+        'Education Above All Foundation',
+        'Youth-oriented input to education access, participation and declaration work, as described in the CV.'
+      ],
+      [
+        'Jan 2024',
+        'Youth Consultation Contributor',
+        'UNESCO Arab World Youth Consultation',
+        'Regional perspectives on technology in education.'
+      ],
+      [
+        'Oct 2025',
+        'ECP Session Presenter',
+        'World Congress of Psychiatry, Prague',
+        'Scientific and early-career professional exchange; congress media committee contribution.'
+      ],
+      [
+        '2026',
+        'Workshop Facilitator & Trainer',
+        'Empower, Qatar',
+        'Eco-resilience training and co-creation of a youth declaration.'
+      ],
+      [
+        'Sep 2026',
+        'Youth Debate Participant',
+        'Generation of Unity, Moscow',
+        'Named participant in a youth dialogue on AI and its societal consequences.'
+      ],
+      [
+        '2026',
+        'Listed Speaker',
+        'TEDxSESAMEUniversity, Tunisia',
+        'Listed speaker; talk title and recording to be confirmed.'
+      ]
+    ],
+    projects:[
+      {
+        label:'Public Speaking',
+        title:'TEDxSESAMEUniversity',
+        description:'Listed speaker at the Beyond the Script event.',
+        type:'event',
+        id:'tedx'
+      },
+      {
+        label:'International Dialogue',
+        title:'Generation of Unity',
+        description:'Named participant in a debate on artificial intelligence in Moscow.',
+        type:'event',
+        id:'moscow'
+      },
+      {
+        label:'Youth Facilitation',
+        title:'Empower 2026, Qatar',
+        description:'Eco-resilience workshop and Youth Declaration co-creation.',
+        type:'event',
+        id:'doha'
+      },
+      {
+        label:'Scientific Community',
+        title:'World Congress of Psychiatry',
+        description:'Early Career Psychiatrist session presenter and media committee contributor in Prague.',
+        type:'event',
+        id:'prague'
+      }
+    ],
+    evidenceTitle:'Documented International Engagements',
+    evidenceIntro:'Explore the original event records and role distinctions.',
+    researchIds:[],
+    evidence:[
+      [
+        'TEDxSESAMEUniversity',
+        'Official speaker listing; individual talk details pending.'
+      ],
+      [
+        'Moscow, Russia',
+        'World Peoples Assembly names Mohamed among youth debate participants.'
+      ],
+      [
+        'Doha, Qatar',
+        'Mohamed’s public post describes his facilitation and training work.'
+      ],
+      [
+        'Prague, Czech Republic',
+        'Presentation and media committee role recorded in the working CV.'
+      ]
+    ],
+    note:'New York / UN General Assembly details and the Addis Ababa program-listed panel require specific attendance and role evidence before being promoted as completed speaking engagements.'
   }
 ];
 
 /* SELECTED WORK */
-
 const works = [
   {
     tag:'Governance & Strategy',
     title:'Building Stronger Youth Institutions',
     teaser:'Organizational development and governance at YOUTH CLUBs.',
     parts:[
-      ['Challenge','Strengthen the structure and governance of a national youth-led organization.'],
+      ['Challenge','Strengthen the governance and scalability of a national youth-led organization.'],
       ['Approach','Develop strategic priorities, democratic governance structures, clearer roles and internal regulations.'],
       ['Selected Outputs','Documentation for seven organizational units and strategic work across ten regions.']
     ]
@@ -814,97 +1234,183 @@ const works = [
   {
     tag:'Youth Empowerment',
     title:'Designing a Leadership Pipeline',
-    teaser:'The Wallah We Can Junior empowerment program.',
+    teaser:'Wallah We Can Junior empowerment program.',
     parts:[
-      ['Challenge','Build a structured approach to youth leadership development.'],
-      ['Approach','Create recruitment, curriculum, facilitation, supervision and action-oriented training pathways.'],
+      ['Challenge','Create a structured approach to youth leadership development.'],
+      ['Approach','Build recruitment, curriculum, facilitation, supervision and action-oriented learning pathways.'],
       ['Selected Outputs','A youth empowerment program involving 18 participants.']
     ]
   },
   {
     tag:'Clinical Education',
     title:'Exploring AI & Child Development',
-    teaser:'An interdisciplinary learning series at Razi Hospital.',
+    teaser:'Interdisciplinary learning series at Razi Hospital.',
     parts:[
-      ['Challenge','Translate evolving AI issues into clinically relevant dialogue.'],
-      ['Approach','Coordinate seminars and present on medical applications, ethics and child development.'],
+      ['Challenge','Translate evolving AI issues into clinically relevant discussions.'],
+      ['Approach','Coordinate seminars and present on medical applications, ethical implications and child development.'],
       ['Selected Outputs','Seven sessions involving 27 residents and clinicians.']
     ]
   },
   {
-    tag:'Mental Health & Youth Action',
+    tag:'Youth Action',
     title:'From Anxiety to Collective Action',
     teaser:'Eco-resilience and youth declaration facilitation in Qatar.',
     parts:[
-      ['Challenge','Connect climate-related concerns with practical learning and youth engagement.'],
-      ['Approach','Facilitate declaration co-creation and participatory training on eco-resilience.'],
-      ['Selected Outputs','Workshop delivery and facilitated dialogue; detailed outcomes await confirmation.']
+      ['Challenge','Connect climate-related concerns to actionable learning and youth engagement.'],
+      ['Approach','Facilitate declaration co-creation and eco-resilience training.'],
+      ['Selected Outputs','Workshop delivery and dialogue; detailed outcomes require confirmation.']
     ]
   }
 ];
 
-/* SCIENTIFIC RESEARCH — 16 CONTRIBUTIONS */
-
+/* RESEARCH — 16 CONTRIBUTIONS */
 const research = [
-  ['2026','Evolution of Clinical Profiles and Referral Pathways in ADHD','9th International Francophone ADHD Colloquium · Montreal','Poster Presenter','adhd-clinical-profiles'],
-  ['2026','ADHD Symptoms among Parents of Children with ADHD: Prevalence and Associated Factors in a Tunisian Sample','9th International Francophone ADHD Colloquium · Montreal','Poster Presenter','adhd-parents-symptoms'],
-  ['2026','Associated Factors with Maternal Alexithymia in a Child Psychiatry Setting','27th IACAPAP World Congress · Hamburg','Poster Presenter','maternal-alexithymia'],
-  ['2026','Associated Factors with Maternal Parenting Styles among Adolescents in Child Psychiatry Setting','27th IACAPAP World Congress · Hamburg','Poster Presenter','maternal-parenting-styles'],
-  ['2026','Evaluation of a Structured Therapeutic Education Program for Parents of Children with Autism Spectrum Disorder','20th National Research Days in Psychiatry','Poster Presenter','therapeutic-education-autism'],
-  ['2026','Identification of Difficulties and Expectations Expressed by Parents of Children with Autism Spectrum Disorder','20th National Research Days in Psychiatry','Poster Presenter','parent-expectations-autism'],
-  ['2026','ADHD in Girls: Toward Better School Identification — A Comparative Study Five Years Apart','20th National Research Days in Psychiatry','Poster Presenter','adhd-girls-school'],
-  ['2026','Epidemiological and Clinical Aspects of Child Victims of Violence Referred to Child Psychiatry','20th National Research Days in Psychiatry','Poster Presenter','child-victims-violence'],
-  ['2025','Socio-Epidemiological and Clinical Profile of Children Evaluated at the Military Hospital of Tunis for Traumatic Event Exposure','2nd International Congress of Community Medicine · Mahdia','Poster Presenter','traumatic-event-military-hospital'],
-  ['2025','Profil scolaire des enfants consultant en pédopsychiatrie à l’Hôpital militaire de Tunis','41st Franco-Maghreb Congress of Psychiatry · Djerba','Poster Presenter','profil-scolaire-enfants'],
-  ['2025','Clinical Features of Children Evaluated at the Military Hospital of Tunis for Traumatic Event Exposure','2nd International Congress of Community Medicine · Mahdia','Co-author','clinical-features-traumatic-exposure'],
-  ['2025','Evolution clinique des enfants suivis en pédopsychiatrie à l’Hôpital militaire de Tunis','41st Franco-Maghreb Congress of Psychiatry · Djerba','Co-author','evolution-clinique-enfants'],
-  ['2025','Particularités périnatales et postnatales des enfants consultant en pédopsychiatrie à l’Hôpital Militaire de Tunis','41st Franco-Maghreb Congress of Psychiatry · Djerba','Co-author','particularites-perinatales'],
-  ['2025','Profil clinique des enfants consultant en pédopsychiatrie à l’Hôpital Militaire de Tunis','41st Franco-Maghreb Congress of Psychiatry · Djerba','Co-author','profil-clinique-enfants'],
-  ['2025','Prise en charge thérapeutique des enfants suivis en pédopsychiatrie à l’Hôpital Militaire de Tunis','41st Franco-Maghreb Congress of Psychiatry · Djerba','Co-author','prise-en-charge-therapeutique'],
-  ['2026','Enfants de population militaire et exposition à un évènement traumatique','L’Encéphale Congress · Paris','Co-author','enfants-population-militaire']
+  [
+    '2026',
+    'Evolution of Clinical Profiles and Referral Pathways in ADHD',
+    '9th International Francophone ADHD Colloquium · Montreal',
+    'Poster Presenter',
+    'adhd-clinical-profiles'
+  ],
+  [
+    '2026',
+    'ADHD Symptoms among Parents of Children with ADHD: Prevalence and Associated Factors in a Tunisian Sample',
+    '9th International Francophone ADHD Colloquium · Montreal',
+    'Poster Presenter',
+    'adhd-parents-symptoms'
+  ],
+  [
+    '2026',
+    'Associated Factors with Maternal Alexithymia in a Child Psychiatry Setting',
+    '27th IACAPAP World Congress · Hamburg',
+    'Poster Presenter',
+    'maternal-alexithymia'
+  ],
+  [
+    '2026',
+    'Associated Factors with Maternal Parenting Styles among Adolescents in Child Psychiatry Setting',
+    '27th IACAPAP World Congress · Hamburg',
+    'Poster Presenter',
+    'maternal-parenting-styles'
+  ],
+  [
+    '2026',
+    'Evaluation of a Structured Therapeutic Education Program for Parents of Children with Autism Spectrum Disorder',
+    '20th National Research Days in Psychiatry',
+    'Poster Presenter',
+    'therapeutic-education-autism'
+  ],
+  [
+    '2026',
+    'Identification of Difficulties and Expectations Expressed by Parents of Children with Autism Spectrum Disorder',
+    '20th National Research Days in Psychiatry',
+    'Poster Presenter',
+    'parent-expectations-autism'
+  ],
+  [
+    '2026',
+    'ADHD in Girls: Toward Better School Identification — A Comparative Study Five Years Apart',
+    '20th National Research Days in Psychiatry',
+    'Poster Presenter',
+    'adhd-girls-school'
+  ],
+  [
+    '2026',
+    'Epidemiological and Clinical Aspects of Child Victims of Violence Referred to Child Psychiatry',
+    '20th National Research Days in Psychiatry',
+    'Poster Presenter',
+    'child-victims-violence'
+  ],
+  [
+    '2025',
+    'Socio-Epidemiological and Clinical Profile of Children Evaluated at the Military Hospital of Tunis for Traumatic Event Exposure',
+    '2nd International Congress of Community Medicine · Mahdia',
+    'Poster Presenter',
+    'traumatic-event-military-hospital'
+  ],
+  [
+    '2025',
+    'Profil scolaire des enfants consultant en pédopsychiatrie à l’Hôpital militaire de Tunis',
+    '41st Franco-Maghreb Congress of Psychiatry · Djerba',
+    'Poster Presenter',
+    'profil-scolaire-enfants'
+  ],
+  [
+    '2025',
+    'Clinical Features of Children Evaluated at the Military Hospital of Tunis for Traumatic Event Exposure',
+    '2nd International Congress of Community Medicine · Mahdia',
+    'Co-author',
+    'clinical-features-traumatic-exposure'
+  ],
+  [
+    '2025',
+    'Evolution clinique des enfants suivis en pédopsychiatrie à l’Hôpital militaire de Tunis',
+    '41st Franco-Maghreb Congress of Psychiatry · Djerba',
+    'Co-author',
+    'evolution-clinique-enfants'
+  ],
+  [
+    '2025',
+    'Particularités périnatales et postnatales des enfants consultant en pédopsychiatrie à l’Hôpital Militaire de Tunis',
+    '41st Franco-Maghreb Congress of Psychiatry · Djerba',
+    'Co-author',
+    'particularites-perinatales'
+  ],
+  [
+    '2025',
+    'Profil clinique des enfants consultant en pédopsychiatrie à l’Hôpital Militaire de Tunis',
+    '41st Franco-Maghreb Congress of Psychiatry · Djerba',
+    'Co-author',
+    'profil-clinique-enfants'
+  ],
+  [
+    '2025',
+    'Prise en charge thérapeutique des enfants suivis en pédopsychiatrie à l’Hôpital Militaire de Tunis',
+    '41st Franco-Maghreb Congress of Psychiatry · Djerba',
+    'Co-author',
+    'prise-en-charge-therapeutique'
+  ],
+  [
+    '2026',
+    'Enfants de population militaire et exposition à un évènement traumatique',
+    'L’Encéphale Congress · Paris',
+    'Co-author',
+    'enfants-population-militaire'
+  ]
 ].map(([year,title,event,role,fileKey]) => ({
   year,title,event,role,fileKey
 }));
 
 /* HELPERS */
-
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 
-function esc(value){
-  return String(value).replace(/[&<>"']/g,c=>({
-    '&':'&amp;',
-    '<':'&lt;',
-    '>':'&gt;',
-    '"':'&quot;',
-    "'":'&#39;'
-  }[c]));
-}
+const esc = v => String(v).replace(/[&<>"']/g,c=>({
+  '&':'&amp;',
+  '<':'&lt;',
+  '>':'&gt;',
+  '"':'&quot;',
+  "'":'&#39;'
+}[c]));
 
-function getEvent(id){
-  return events.find(e=>e.id===id);
-}
+const getEvent = id => events.find(e=>e.id===id);
 
-function stageImage(e){
-  const src=STAGE_IMAGES[e.id];
-  return src ? `
-    <img src="${esc(src)}"
-      alt="${e.id==='tedx'?'Official speaker portrait':'Event photograph'}"
-      loading="lazy">
-    <span class="event-image-label">
-      ${e.id==='tedx'?'Official speaker portrait':'Event image'}
-    </span>
-  ` : '';
-}
+const stageImage = e => STAGE_IMAGES[e.id] ? `
+  <img src="${esc(STAGE_IMAGES[e.id])}"
+       alt="${e.id==='tedx'?'Speaker portrait':'Event photo'}"
+       loading="lazy">
+  <span class="event-image-label">
+    ${e.id==='tedx'?'Speaker portrait':'Event photo'}
+  </span>
+` : '';
 
 /* MODALS */
-
-let activeModal=null;
-let modalTrigger=null;
-let posterRequestId=0;
+let activeModal = null;
+let modalTrigger = null;
+let posterRequestId = 0;
 
 function openModal(modal,trigger){
-  if(activeModal) closeModal();
+  if(activeModal)closeModal();
 
   modalTrigger=trigger||document.activeElement;
   activeModal=modal;
@@ -912,11 +1418,12 @@ function openModal(modal,trigger){
   modal.classList.add('open');
   modal.setAttribute('aria-hidden','false');
   document.body.classList.add('lock');
+
   modal.querySelector('[data-close]').focus();
 }
 
 function closeModal(){
-  if(!activeModal) return;
+  if(!activeModal)return;
 
   const old=activeModal;
   activeModal=null;
@@ -930,19 +1437,19 @@ function closeModal(){
     $('#posterViewer').replaceChildren();
   }
 
-  if(modalTrigger?.focus) modalTrigger.focus();
+  if(modalTrigger?.isConnected)modalTrigger.focus();
 }
 
 $$('.modal').forEach(modal=>{
   modal.querySelector('[data-close]').onclick=closeModal;
 
   modal.addEventListener('click',e=>{
-    if(e.target===modal) closeModal();
+    if(e.target===modal)closeModal();
   });
 });
 
 document.addEventListener('keydown',e=>{
-  if(!activeModal) return;
+  if(!activeModal)return;
 
   if(e.key==='Escape'){
     closeModal();
@@ -951,29 +1458,25 @@ document.addEventListener('keydown',e=>{
 
   if(e.key==='Tab'){
     const focusable=[
-      ...activeModal.querySelectorAll(
-        'button:not([disabled]),a[href],[tabindex]:not([tabindex="-1"])'
-      )
+      ...activeModal.querySelectorAll('button:not([disabled]),a[href]')
     ].filter(el=>getComputedStyle(el).display!=='none');
 
-    if(!focusable.length) return;
+    if(!focusable.length)return;
 
-    const first=focusable[0];
-    const last=focusable.at(-1);
-
-    if(e.shiftKey && document.activeElement===first){
+    if(e.shiftKey && document.activeElement===focusable[0]){
       e.preventDefault();
-      last.focus();
-    }else if(!e.shiftKey && document.activeElement===last){
+      focusable.at(-1).focus();
+    }else if(!e.shiftKey && document.activeElement===focusable.at(-1)){
       e.preventDefault();
-      first.focus();
+      focusable[0].focus();
     }
   }
 });
 
+/* EVENT DETAILS */
 function openEvent(id,trigger){
   const e=getEvent(id);
-  if(!e) return;
+  if(!e)return;
 
   $('#eventModalTitle').textContent=e.title;
 
@@ -987,17 +1490,46 @@ function openEvent(id,trigger){
   $('#eventModalDescription').textContent=e.description;
 
   $('#eventModalSources').innerHTML=e.source
-    ? `<a href="${esc(e.source)}" target="_blank" rel="noopener noreferrer">${esc(e.sourceLabel)} ↗</a>`
-    : '<span class="muted">Based on working CV · Additional documentation pending</span>';
+    ? `<a href="${esc(e.source)}"
+          target="_blank"
+          rel="noopener noreferrer">
+          ${esc(e.sourceLabel)} ↗
+       </a>`
+    : '<span class="muted">Working CV · Additional documentation pending</span>';
 
   openModal($('#eventModal'),trigger);
 }
 
-/* FEATURED EVENT — OPTIONAL AUTO CAROUSEL */
+/* WORK DETAILS */
+function openWork(index,trigger){
+  const w=works[index];
+  if(!w)return;
 
+  $('#detailTag').textContent=w.tag;
+  $('#detailTitle').textContent=w.title;
+
+  $('#detailBody').innerHTML=w.parts.map(([h,p])=>`
+    <section>
+      <h3>${esc(h)}</h3>
+      <p>${esc(p)}</p>
+    </section>
+  `).join('');
+
+  openModal($('#detailModal'),trigger);
+}
+
+function openInfo(title,body,trigger){
+  $('#detailTag').textContent='Selected Engagement';
+  $('#detailTitle').textContent=title;
+  $('#detailBody').innerHTML=`<p>${esc(body)}</p>`;
+
+  openModal($('#detailModal'),trigger);
+}
+
+/* FEATURED GLOBAL STAGE CAROUSEL */
 const featured=events.filter(e=>e.verified);
-let featuredIndex=0;
 
+let featuredIndex=0;
 let autoWanted=!matchMedia('(prefers-reduced-motion: reduce)').matches;
 let spotVisible=false;
 let autoTimer=null;
@@ -1007,22 +1539,13 @@ let focused=false;
 function stopAuto(){
   clearInterval(autoTimer);
   autoTimer=null;
-
-  const bar=$('.autoplay-indicator');
-  if(bar) bar.classList.remove('running');
+  $('.autoplay-indicator')?.classList.remove('running');
 }
 
 function syncAuto(){
   stopAuto();
 
-  const shouldRun=
-    autoWanted &&
-    spotVisible &&
-    !hovered &&
-    !focused &&
-    !document.hidden;
-
-  if(shouldRun){
+  if(autoWanted && spotVisible && !hovered && !focused && !document.hidden){
     const bar=$('.autoplay-indicator');
 
     if(bar){
@@ -1036,14 +1559,11 @@ function syncAuto(){
     },8000);
   }
 
-  const toggle=$('#autoToggle');
+  const b=$('#autoToggle');
 
-  if(toggle){
-    toggle.textContent=autoWanted
-      ? 'Pause autoplay ⏸'
-      : 'Play autoplay ▶';
-
-    toggle.setAttribute('aria-pressed',String(autoWanted));
+  if(b){
+    b.textContent=autoWanted?'Pause autoplay ⏸':'Play autoplay ▶';
+    b.setAttribute('aria-pressed',String(autoWanted));
   }
 }
 
@@ -1053,9 +1573,10 @@ function renderSpotlight(){
 
   $('#spotlight').innerHTML=`
     <div class="spotlight-media">
-      ${src
-        ? `<img src="${esc(src)}" alt="${e.id==='tedx'?'Official speaker portrait':'Event visual'}">`
-        : ''}
+      ${src?`
+        <img src="${esc(src)}"
+             alt="${e.id==='tedx'?'Official speaker portrait':'Event photo'}">
+      `:''}
 
       <span class="spotlight-caption">
         ${src&&e.id==='tedx'
@@ -1074,9 +1595,7 @@ function renderSpotlight(){
       </span>
 
       <h3>${esc(e.title)}</h3>
-
       <span class="tag">${esc(e.role)}</span>
-
       <p>${esc(e.short)}</p>
 
       <div class="spotlight-meta">
@@ -1092,13 +1611,11 @@ function renderSpotlight(){
 
       <div class="spot-controls">
         <button class="round-control" id="spotPrev"
-          aria-label="Previous event">←</button>
-
+                aria-label="Previous event">←</button>
         <button class="round-control" id="spotNext"
-          aria-label="Next event">→</button>
-
+                aria-label="Next event">→</button>
         <button class="autoplay-toggle" id="autoToggle"
-          aria-pressed="${autoWanted}">
+                aria-pressed="${autoWanted}">
           ${autoWanted?'Pause autoplay ⏸':'Play autoplay ▶'}
         </button>
       </div>
@@ -1107,18 +1624,16 @@ function renderSpotlight(){
     </div>
   `;
 
-  $('#spotView').onclick=e2=>openEvent(e.id,e2.currentTarget);
+  $('#spotView').onclick=ev=>openEvent(e.id,ev.currentTarget);
 
   $('#spotPrev').onclick=()=>{
     featuredIndex=(featuredIndex-1+featured.length)%featured.length;
     renderSpotlight();
-    syncAuto();
   };
 
   $('#spotNext').onclick=()=>{
     featuredIndex=(featuredIndex+1)%featured.length;
     renderSpotlight();
-    syncAuto();
   };
 
   $('#autoToggle').onclick=()=>{
@@ -1155,8 +1670,7 @@ spotlight.addEventListener('focusout',()=>{
 
 document.addEventListener('visibilitychange',syncAuto);
 
-/* GLOBAL STAGE CARDS — EXISTING GRID RETAINED */
-
+/* GLOBAL STAGE CARDS */
 let filter='all';
 
 function renderCards(){
@@ -1166,7 +1680,7 @@ function renderCards(){
 
   $('#eventGrid').innerHTML=chosen.map(e=>`
     <button class="event-card ${e.verified?'':'pending'}"
-      data-event="${esc(e.id)}">
+            data-event="${esc(e.id)}">
 
       <div class="event-visual">
         ${stageImage(e)}
@@ -1175,16 +1689,12 @@ function renderCards(){
 
       <div class="event-body">
         <span class="tag">${esc(e.country)} · ${esc(e.year)}</span>
-
         <h4>${esc(e.title)}</h4>
-
         <span class="tag">${esc(e.role)}</span>
         <p>${esc(e.short)}</p>
 
         <div class="event-bottom">
-          <span>
-            ${e.verified?'Explore Event':'Program Listing Only'}
-          </span>
+          <span>${e.verified?'Explore Event':'Program Listing Only'}</span>
           <span>↗</span>
         </div>
       </div>
@@ -1194,7 +1704,7 @@ function renderCards(){
 
 $('#stageFilters').onclick=e=>{
   const b=e.target.closest('[data-filter]');
-  if(!b) return;
+  if(!b)return;
 
   filter=b.dataset.filter;
 
@@ -1208,15 +1718,23 @@ $('#stageFilters').onclick=e=>{
 
 $('#eventGrid').onclick=e=>{
   const b=e.target.closest('[data-event]');
-  if(b) openEvent(b.dataset.event,b);
+  if(b)openEvent(b.dataset.event,b);
 };
 
 /* REAL LEAFLET MAP */
-
 let map=null;
 let markers={};
 let selectedCity='tedx';
 let mapLoaded=false;
+
+function markerHTML(e){
+  return `
+    <div class="pin-marker
+      ${e.verified?'':'pending'}
+      ${e.id===selectedCity?'selected':''}">
+    </div>
+  `;
+}
 
 function atlasCard(){
   const e=getEvent(selectedCity);
@@ -1228,9 +1746,7 @@ function atlasCard(){
 
     <h3>${esc(e.city)}</h3>
 
-    <span class="atlas-date">
-      ${esc(e.country)} · ${esc(e.year)}
-    </span>
+    <span class="tag">${esc(e.country)} · ${esc(e.year)}</span>
 
     <p>
       <strong style="color:var(--cream)">
@@ -1239,7 +1755,6 @@ function atlasCard(){
     </p>
 
     <p class="atlas-role">${esc(e.role)}</p>
-
     <p>${esc(e.short)}</p>
 
     <div>
@@ -1249,51 +1764,39 @@ function atlasCard(){
     </div>
   `;
 
-  $('#atlasExplore').onclick=ev=>{
-    openEvent(e.id,ev.currentTarget);
-  };
+  $('#atlasExplore').onclick=ev=>openEvent(e.id,ev.currentTarget);
 
   $('#atlasList').innerHTML=events.map(x=>`
     <button class="atlas-chip ${x.id===selectedCity?'active':''}"
-      data-city="${esc(x.id)}">
-      ${esc(x.city)}
-      ${x.verified?'':' · To Verify'}
+            data-city="${esc(x.id)}">
+      ${esc(x.city)}${x.verified?'':' · To Verify'}
     </button>
   `).join('');
 }
 
-function markerHTML(e){
-  return `<div class="pin-marker
-    ${e.verified?'':'pending'}
-    ${e.id===selectedCity?'selected':''}">
-  </div>`;
-}
-
 function selectCity(id,fly=true){
   const e=getEvent(id);
-  if(!e) return;
+  if(!e)return;
 
   selectedCity=id;
   atlasCard();
 
-  if(!map) return;
+  if(!map)return;
 
   events.forEach(x=>{
-    markers[x.id]?.setIcon(
-      L.divIcon({
-        className:'',
-        html:markerHTML(x),
-        iconSize:[18,18],
-        iconAnchor:[9,9]
-      })
-    );
+    markers[x.id]?.setIcon(L.divIcon({
+      className:'',
+      html:markerHTML(x),
+      iconSize:[18,18],
+      iconAnchor:[9,9]
+    }));
   });
 
   if(fly){
     map.flyTo(
       [e.lat,e.lon],
       Math.max(map.getZoom(),5),
-      {duration:1.15}
+      {duration:1.1}
     );
   }
 
@@ -1301,34 +1804,22 @@ function selectCity(id,fly=true){
 }
 
 function resetMap(){
-  if(!map) return;
-
-  const bounds=L.latLngBounds(
-    events.map(e=>[e.lat,e.lon])
-  );
-
-  map.fitBounds(
-    bounds.pad(.35),
-    {animate:true,maxZoom:5}
-  );
-
-  map.closePopup();
+  if(map){
+    map.fitBounds(
+      L.latLngBounds(events.map(e=>[e.lat,e.lon])).pad(.35),
+      {animate:true,maxZoom:5}
+    );
+  }
 }
 
 function initMap(){
-  if(mapLoaded) return;
+  if(mapLoaded)return;
   mapLoaded=true;
 
   const el=$('#realMap');
 
   if(typeof L==='undefined'){
-    el.innerHTML=`
-      <div class="map-fallback">
-        The map library could not load.
-        Check your internet connection;
-        event details remain available in the cards and city list.
-      </div>
-    `;
+    el.innerHTML='<div class="map-fallback">Map unavailable. The event cards above remain accessible.</div>';
     return;
   }
 
@@ -1336,8 +1827,6 @@ function initMap(){
     map=L.map(el,{
       scrollWheelZoom:false,
       worldCopyJump:true,
-      zoomControl:true,
-      attributionControl:true,
       minZoom:2,
       maxZoom:15
     });
@@ -1369,159 +1858,395 @@ function initMap(){
       ).addTo(map);
 
       marker.bindPopup(`
-        <div>
-          <strong style="color:#d8b98b">${esc(e.city)}</strong>
-          <br>
-          ${esc(e.title)}
-          <br>
-          <small>${esc(e.role)}</small>
-        </div>
+        <strong style="color:#d8b98b">${esc(e.city)}</strong>
+        <br>${esc(e.title)}
+        <br><small>${esc(e.role)}</small>
       `);
 
-      marker.on('click',()=>{
-        selectCity(e.id,false);
-      });
+      marker.on('click',()=>selectCity(e.id,false));
 
       markers[e.id]=marker;
     });
 
     resetMap();
-
-    setTimeout(()=>{
-      map.invalidateSize();
-    },150);
-
-  }catch(err){
-    el.innerHTML=`
-      <div class="map-fallback">
-        Unable to display the interactive map.
-        The event archive remains available above.
-      </div>
-    `;
-
-    console.warn('Map loading error',err);
+    setTimeout(()=>map.invalidateSize(),150);
+  }catch(error){
+    el.innerHTML='<div class="map-fallback">Unable to load the map. Please use the Global Stage event cards above.</div>';
+    console.warn(error);
   }
 }
 
 $('#atlasList').onclick=e=>{
   const b=e.target.closest('[data-city]');
-  if(b) selectCity(b.dataset.city);
+  if(b)selectCity(b.dataset.city);
 };
 
 $('#mapReset').onclick=resetMap;
 
-/* LOAD MAP ONLY WHEN USER SCROLLS NEAR IT */
-
 if('IntersectionObserver' in window){
   const io=new IntersectionObserver(entries=>{
-    if(entries.some(x=>x.isIntersecting)){
+    if(entries.some(e=>e.isIntersecting)){
       initMap();
       io.disconnect();
     }
-  },{
-    rootMargin:'200px 0px'
-  });
+  },{rootMargin:'200px 0px'});
 
   io.observe($('#atlas'));
 }else{
   initMap();
 }
 
-/* EXPERTISE AND WORK */
-
-$('#pillarGrid').innerHTML=pillars.map((p,i)=>`
-  <button class="pillar reveal" data-pillar="${i}">
-    <span class="pillar-index">${esc(p.number)} / Expertise</span>
+/* HOME PILLAR CARDS */
+$('#pillarGrid').innerHTML=pillars.map(p=>`
+  <a class="pillar reveal" href="#pillar/${p.slug}">
+    <span class="pillar-index">${esc(p.number)} / EXPERTISE</span>
     <h3>${esc(p.title)}</h3>
     <p>${esc(p.short)}</p>
-    <span class="pillar-link">Explore Discipline ↗</span>
-  </button>
+    <span class="pillar-link">Explore Full Profile ↗</span>
+  </a>
 `).join('');
 
+/* HOME SELECTED WORK */
 $('#workGrid').innerHTML=works.map((w,i)=>`
   <button class="work-card reveal" data-work="${i}">
     <div class="work-content">
       <span class="tag">${esc(w.tag)}</span>
       <h3>${esc(w.title)}</h3>
       <p>${esc(w.teaser)}</p>
-      <span class="arrow-link">View Case Study ↗</span>
+      <span class="text-link">View Case Study ↗</span>
     </div>
   </button>
 `).join('');
 
-function openDetail(title,tag,sections,trigger){
-  $('#detailTitle').textContent=title;
-  $('#detailTag').textContent=tag;
-
-  $('#detailBody').innerHTML=sections.map(([h,p])=>`
-    <section>
-      <h3>${esc(h)}</h3>
-      <p>${esc(p)}</p>
-    </section>
-  `).join('');
-
-  openModal($('#detailModal'),trigger);
-}
-
-$('#pillarGrid').onclick=e=>{
-  const b=e.target.closest('[data-pillar]');
-
-  if(b){
-    const p=pillars[Number(b.dataset.pillar)];
-    openDetail(p.title,'Expertise / '+p.number,p.sections,b);
-  }
-};
-
 $('#workGrid').onclick=e=>{
   const b=e.target.closest('[data-work]');
-
-  if(b){
-    const w=works[Number(b.dataset.work)];
-    openDetail(w.title,w.tag,w.parts,b);
-  }
+  if(b)openWork(Number(b.dataset.work),b);
 };
 
-/* RESEARCH POSTERS */
+/* GENERATE THE FOUR COMPLETE PILLAR PAGES */
+function renderPillarPage(p){
+  const index=pillars.indexOf(p);
+  const next=pillars[(index+1)%pillars.length];
 
-$('#researchList').innerHTML=research.map((r,i)=>`
-  <article class="research-row">
-    <time>${esc(r.year)}</time>
+  const focus=p.focus.map(([h,d],i)=>`
+    <article class="focus-card">
+      <small>0${i+1} / FOCUS AREA</small>
+      <h3>${esc(h)}</h3>
+      <p>${esc(d)}</p>
+    </article>
+  `).join('');
 
-    <div>
-      <strong>${esc(r.title)}</strong>
-      <p>${esc(r.event)}</p>
+  const journey=p.journey.map(([date,role,org,description])=>`
+    <article class="timeline-item">
+      <span class="timeline-date">${esc(date)}</span>
+      <div>
+        <h3>${esc(role)}</h3>
+        <span class="timeline-org">${esc(org)}</span>
+        <p>${esc(description)}</p>
+      </div>
+    </article>
+  `).join('');
+
+  const projects=p.projects.map((c,i)=>`
+    <button class="detail-work-card" data-project="${i}">
+      <span class="tag">${esc(c.label)}</span>
+      <h3>${esc(c.title)}</h3>
+      <p>${esc(c.description)}</p>
+      <span class="text-link">Explore Contribution ↗</span>
+    </button>
+  `).join('');
+
+  let evidence='';
+
+  if(p.researchIds.length){
+    evidence=p.researchIds.map(i=>{
+      const r=research[i];
+
+      return `
+        <article class="evidence-card">
+          <span class="tag">${esc(r.year)} · ${esc(r.role)}</span>
+          <h3>${esc(r.title)}</h3>
+          <p>${esc(r.event)}</p>
+          <button class="text-link" data-poster="${i}">
+            View Poster ↗
+          </button>
+        </article>
+      `;
+    }).join('');
+  }else{
+    evidence=p.evidence.map(([h,d])=>`
+      <article class="evidence-card">
+        <span class="tag">Evidence & Outputs</span>
+        <h3>${esc(h)}</h3>
+        <p>${esc(d)}</p>
+      </article>
+    `).join('');
+  }
+
+  $('#pillarPage').innerHTML=`
+    <!-- IMMERSIVE HERO -->
+    <section class="detail-hero">
+      <div class="wrap detail-hero-inner">
+
+        <div class="breadcrumb">
+          <a href="#expertise">← All Expertise</a>
+          <span>/</span>
+          <span>${esc(p.number)} / 04</span>
+        </div>
+
+        <div class="detail-hero-content">
+          <div>
+            <span class="eyebrow">
+              MOHAMED FALFOUL / DISCIPLINE ${esc(p.number)}
+            </span>
+
+            <h1>${esc(p.title)}</h1>
+            <p class="detail-lead">${esc(p.lead)}</p>
+          </div>
+
+          <div class="detail-hero-index" aria-hidden="true">
+            ${esc(p.number)}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNAL NAVIGATION -->
+    <nav class="detail-subnav" aria-label="On this page">
+      <div class="wrap detail-subnav-inner">
+        <button data-detail-scroll="detail-overview">Overview</button>
+        <button data-detail-scroll="detail-focus">Focus Areas</button>
+        <button data-detail-scroll="detail-journey">Experience</button>
+        <button data-detail-scroll="detail-projects">Selected Work</button>
+        <button data-detail-scroll="detail-evidence">Evidence</button>
+
+        <a class="detail-subnav back-home"
+           href="#expertise"
+           style="padding:20px 15px;font-size:10px">
+          ← All Pillars
+        </a>
+      </div>
+    </nav>
+
+    <!-- OVERVIEW -->
+    <section class="detail-section" id="detail-overview">
+      <div class="wrap detail-two-col">
+        <div>
+          <span class="eyebrow">01 / Overview</span>
+          <div class="detail-aside">
+            <span class="tag">The Perspective</span>
+            <p class="muted">${esc(p.short)}</p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="detail-intro-quote">
+            ${esc(p.strap)}
+          </h2>
+
+          ${p.intro.map(s=>`
+            <p class="detail-paragraph">${esc(s)}</p>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+
+    <!-- FOCUS AREAS -->
+    <section class="detail-section alt" id="detail-focus">
+      <div class="wrap">
+        <span class="eyebrow">02 / Capabilities</span>
+        <h2 class="section-title">Areas of<br><em>Focus.</em></h2>
+        <div class="focus-grid">${focus}</div>
+      </div>
+    </section>
+
+    <!-- CAREER TIMELINE -->
+    <section class="detail-section" id="detail-journey">
+      <div class="wrap">
+
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">03 / Professional Journey</span>
+            <h2 class="section-title">
+              Experience &<br><em>Engagement.</em>
+            </h2>
+          </div>
+
+          <p class="muted">
+            A curated selection from Mohamed's professional record,
+            with chronology and roles maintained as stated in the working CV.
+          </p>
+        </div>
+
+        <div class="timeline">${journey}</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="detail-section alt" id="detail-projects">
+      <div class="wrap">
+        <span class="eyebrow">04 / Work in Practice</span>
+        <h2 class="section-title">
+          Selected<br><em>Contributions.</em>
+        </h2>
+
+        <div class="detail-work-grid">
+          ${projects}
+        </div>
+      </div>
+    </section>
+
+    <!-- EVIDENCE -->
+    <section class="detail-section" id="detail-evidence">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">05 / Evidence & Deliverables</span>
+            <h2 class="section-title">${esc(p.evidenceTitle)}.</h2>
+          </div>
+
+          <p class="muted">${esc(p.evidenceIntro)}</p>
+        </div>
+
+        <div class="detail-evidence">${evidence}</div>
+
+        <p class="detail-note">${esc(p.note)}</p>
+      </div>
+    </section>
+
+    <!-- NEXT PILLAR -->
+    <div class="wrap detail-next">
+      <div>
+        <span class="eyebrow">Continue Exploring</span>
+        <h2>Next: ${esc(next.title)}</h2>
+      </div>
+
+      <a class="button ghost" href="#pillar/${next.slug}">
+        Explore Next Pillar ↗
+      </a>
     </div>
+  `;
 
-    <div class="research-actions">
-      <span class="research-role">${esc(r.role)}</span>
-      <button class="poster-btn" data-poster="${i}">
-        View Poster ↗
-      </button>
-    </div>
-  </article>
-`).join('');
+  /* PROJECT INTERACTIONS */
+  $('#pillarPage').querySelectorAll('[data-project]').forEach(b=>{
+    b.addEventListener('click',()=>{
+      const c=p.projects[Number(b.dataset.project)];
 
-$('#researchCount').textContent=
-  research.length+' scientific contributions';
+      if(c.type==='work'){
+        openWork(c.index,b);
+      }else if(c.type==='event'){
+        openEvent(c.id,b);
+      }else{
+        openInfo(c.title,c.text,b);
+      }
+    });
+  });
 
+  /* SECTION NAVIGATION */
+  $('#pillarPage').querySelectorAll('[data-detail-scroll]').forEach(b=>{
+    b.addEventListener('click',()=>{
+      document.getElementById(b.dataset.detailScroll)?.scrollIntoView({
+        behavior:matchMedia('(prefers-reduced-motion: reduce)').matches
+          ? 'instant'
+          : 'smooth'
+      });
+    });
+  });
+}
+
+/* NAVIGATION / URL ROUTER */
+function route(){
+  const hash=decodeURIComponent(location.hash||'#home');
+  const match=hash.match(/^#pillar\/([a-z-]+)$/);
+
+  const p=match
+    ? pillars.find(x=>x.slug===match[1])
+    : null;
+
+  closeModal();
+
+  if(p){
+    $('#homePage').hidden=true;
+    $('#pillarPage').hidden=false;
+
+    renderPillarPage(p);
+
+    document.title=p.title+' | Mohamed Falfoul';
+
+    window.scrollTo({
+      top:0,
+      behavior:'instant'
+    });
+  }else{
+    $('#pillarPage').hidden=true;
+    $('#homePage').hidden=false;
+
+    document.title='Mohamed Falfoul — The Global Figure';
+
+    if(hash!=='#home'){
+      requestAnimationFrame(()=>{
+        const target=document.getElementById(hash.slice(1));
+
+        if(target){
+          target.scrollIntoView({behavior:'instant'});
+        }
+      });
+    }else{
+      window.scrollTo({
+        top:0,
+        behavior:'instant'
+      });
+    }
+
+    if(map){
+      setTimeout(()=>map.invalidateSize(),120);
+    }
+  }
+}
+
+window.addEventListener('hashchange',route);
+
+/* RESEARCH LIST */
+function renderResearch(){
+  $('#researchList').innerHTML=research.map((r,i)=>`
+    <article class="research-row">
+      <time>${esc(r.year)}</time>
+
+      <div>
+        <strong>${esc(r.title)}</strong>
+        <p>${esc(r.event)}</p>
+      </div>
+
+      <div class="research-actions">
+        <span class="research-role">${esc(r.role)}</span>
+
+        <button class="poster-btn" data-poster="${i}">
+          View Poster ↗
+        </button>
+      </div>
+    </article>
+  `).join('');
+
+  $('#researchCount').textContent=
+    research.length+' scientific contributions';
+}
+
+/* POSTER FILE DETECTION */
 async function findPoster(fileKey){
   const ext=['jpg','png','webp','jpeg','pdf'];
 
-  const attempts=await Promise.all(
-    ext.map(async e=>{
-      const path='posters/'+fileKey+'.'+e;
+  const found=await Promise.all(ext.map(async x=>{
+    const path='posters/'+fileKey+'.'+x;
 
-      try{
-        const res=await fetch(path,{method:'HEAD'});
+    try{
+      const res=await fetch(path,{method:'HEAD'});
+      return res.ok?{path,ext:x}:null;
+    }catch{
+      return null;
+    }
+  }));
 
-        return res.ok ? {path,ext:e} : null;
-      }catch{
-        return null;
-      }
-    })
-  );
-
-  return attempts.find(Boolean)||null;
+  return found.find(Boolean)||null;
 }
 
 function posterPlaceholder(){
@@ -1531,8 +2256,8 @@ function posterPlaceholder(){
       <span class="eyebrow">Research Archive</span>
       <b>Poster Coming Soon.</b>
       <p>
-        The original poster will appear here
-        once the approved file is uploaded.
+        The original scientific poster will appear here
+        when the approved file is uploaded.
       </p>
     </div>
   `;
@@ -1543,7 +2268,7 @@ function posterPlaceholder(){
 
 async function openPoster(index,trigger){
   const r=research[index];
-  if(!r) return;
+  if(!r)return;
 
   const req=++posterRequestId;
 
@@ -1563,10 +2288,9 @@ async function openPoster(index,trigger){
 
   const file=await findPoster(r.fileKey);
 
-  if(
-    req!==posterRequestId ||
-    activeModal!==$('#posterModal')
-  ) return;
+  if(req!==posterRequestId||activeModal!==$('#posterModal')){
+    return;
+  }
 
   if(!file){
     posterPlaceholder();
@@ -1580,38 +2304,35 @@ async function openPoster(index,trigger){
     const frame=document.createElement('iframe');
     frame.src=file.path+'#toolbar=1';
     frame.title=r.title;
+
     $('#posterViewer').replaceChildren(frame);
   }else{
     const img=document.createElement('img');
     img.alt='Research poster: '+r.title;
 
     img.onload=()=>{
-      if(
-        req===posterRequestId &&
-        activeModal===$('#posterModal')
-      ){
+      if(req===posterRequestId&&activeModal===$('#posterModal')){
         $('#posterViewer').replaceChildren(img);
       }
     };
 
     img.onerror=()=>{
-      if(req===posterRequestId) posterPlaceholder();
+      if(req===posterRequestId)posterPlaceholder();
     };
 
     img.src=file.path;
   }
 }
 
-$('#researchList').onclick=e=>{
+/* HANDLE POSTERS IN HOMEPAGE AND PILLAR PAGES */
+document.addEventListener('click',e=>{
   const b=e.target.closest('[data-poster]');
-
   if(b){
     openPoster(Number(b.dataset.poster),b);
   }
-};
+});
 
-/* MOBILE NAVIGATION */
-
+/* MOBILE MENU */
 const menu=$('#menu');
 const toggle=$('#menuToggle');
 
@@ -1622,20 +2343,13 @@ toggle.onclick=()=>{
   toggle.textContent=opened?'✕ Close':'☰ Menu';
 };
 
-$$('.menu a').forEach(a=>{
-  a.onclick=()=>{
-    menu.classList.remove('open');
-    toggle.setAttribute('aria-expanded','false');
-    toggle.textContent='☰ Menu';
-  };
+$$('.menu a').forEach(a=>a.onclick=()=>{
+  menu.classList.remove('open');
+  toggle.setAttribute('aria-expanded','false');
+  toggle.textContent='☰ Menu';
 });
 
-window.addEventListener('scroll',()=>{
-  $('#header').classList.toggle('scrolled',window.scrollY>30);
-},{passive:true});
-
-/* FINAL INITIALIZATION */
-
+/* INITIALIZATION */
 $('#year').textContent=new Date().getFullYear();
 
 $('#portraitImage').addEventListener('error',function(){
@@ -1646,16 +2360,15 @@ $('#portraitImage').addEventListener('error',function(){
 renderSpotlight();
 renderCards();
 atlasCard();
+renderResearch();
+route();
 
-/* SPOTLIGHT AUTOPLAY ONLY WHILE VISIBLE */
-
+/* AUTO CAROUSEL ONLY WHEN VISIBLE */
 if('IntersectionObserver' in window){
   const io=new IntersectionObserver(entries=>{
     spotVisible=entries.some(e=>e.isIntersecting);
     syncAuto();
-  },{
-    threshold:.35
-  });
+  },{threshold:.35});
 
   io.observe(spotlight);
 }else{
@@ -1663,8 +2376,7 @@ if('IntersectionObserver' in window){
   syncAuto();
 }
 
-/* SCROLL ANIMATIONS */
-
+/* SCROLL REVEALS */
 if(
   'IntersectionObserver' in window &&
   !matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -1676,9 +2388,7 @@ if(
         reveal.unobserve(e.target);
       }
     });
-  },{
-    threshold:.05
-  });
+  },{threshold:.05});
 
   $$('.reveal').forEach(el=>reveal.observe(el));
 }else{
