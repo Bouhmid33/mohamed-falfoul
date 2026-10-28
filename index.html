@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080e16">
+<meta name="description" content="Mohamed Falfoul — Child & Adolescent Psychiatry, Strategy, Capacity Building and International Advocacy.">
+<title>Mohamed Falfoul | Ideas into Action. Voices into Impact.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#080e16;
+  --bg2:#0d1622;
+  --cream:#f3eee5;
+  --gold:#d5b98b;
+  --muted:#a3afbc;
+  --line:#2b3542;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:Manrope,Arial,sans-serif;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth;scroll-padding-top:86px}
+body {margin:0;background:var(--bg);color:var(--cream);font-family:var(--sans);font-size:14px}
+body.lock {overflow:hidden}
+button,input {font:inherit}
+button,a {-webkit-tap-highlight-color:transparent}
+a {color:inherit;text-decoration:none}
+button {cursor:pointer}
+button:focus-visible,a:focus-visible {outline:2px solid var(--gold);outline-offset:4px}
+::selection {background:var(--gold);color:#08101c}
+.wrap {max-width:1320px;margin:auto;padding:0 6%}
+.section {padding:106px 0;border-top:1px solid var(--line)}
+.eyebrow {text-transform:uppercase;letter-spacing:.23em;font-size:10px;color:var(--gold);font-weight:700}
+.section-title {font:500 clamp(48px,6.2vw,84px)/.98 var(--serif);letter-spacing:-.04em;margin:13px 0 17px}
+.muted {color:var(--muted);line-height:1.85}
+.tag {display:inline-block;font-size:10px;color:var(--gold);letter-spacing:.13em;text-transform:uppercase}
+.button {display:inline-flex;align-items:center;justify-content:center;gap:18px;border:1px solid var(--gold);background:var(--gold);padding:16px 22px;color:#111820;font-weight:700;font-size:11px;transition:.25s}
+.button:hover {background:#e7cfaa;transform:translateY(-2px)}
+.button.ghost {color:var(--cream);background:transparent;border-color:#77808b}
+.button.ghost:hover {border-color:var(--gold);color:var(--gold)}
+.arrow-link {display:inline-flex;align-items:center;gap:20px;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:700}
+.arrow-link:hover {gap:27px}
+.header {height:80px;position:fixed;z-index:100;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 4.5%;border-bottom:1px solid #ffffff20;background:#080e16d9;backdrop-filter:blur(18px)}
+.brand {font:600 38px/1 var(--serif);letter-spacing:-.055em}
+.brand span {color:var(--gold)}
+.menu {display:flex;align-items:center;gap:27px}
+.menu a {font-size:10px;color:#d7dce0;text-transform:uppercase;letter-spacing:.095em;transition:.2s}
+.menu a:hover {color:var(--gold)}
+.menu .menu-cta {border:1px solid var(--gold);color:var(--gold);padding:13px 15px}
+.menu-button {display:none;border:1px solid var(--line);padding:9px 13px;background:transparent;color:var(--cream)}
+
+.hero {position:relative;min-height:850px;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:130px 0 85px;background:linear-gradient(95deg,#080e16 12%,#080e16e9 46%,#0a1124aa 100%),radial-gradient(ellipse at 81% 60%,#23344c 0%,transparent 52%)}
+.hero:before {content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 76% 13%,#ebc89b22,transparent 30%),linear-gradient(116deg,transparent 54%,#ffdbac13 62%,transparent 68%);pointer-events:none}
+.hero-art {position:absolute;right:-12%;top:1%;width:min(75vw,980px);height:100%;pointer-events:none;opacity:.7;mask-image:linear-gradient(to right,transparent,black 22%)}
+.halo {position:absolute;border:1px solid #c7a97945;left:17%;top:12%;width:67%;aspect-ratio:1;border-radius:50%;box-shadow:0 0 120px #c7a97910,inset 0 0 120px #c7a9790a}
+.halo:before,.halo:after {content:'';position:absolute;inset:10%;border:1px solid #c7a9793b;border-radius:50%}
+.halo:after {inset:25%;border-color:#c7a97927}
+.beam {position:absolute;top:-25%;left:25%;width:18%;height:130%;background:linear-gradient(to bottom,#d1b38324,transparent 70%);filter:blur(40px);transform:rotate(-18deg)}
+.hero-content {position:relative;z-index:2;max-width:900px}
+.hero h1 {font:500 clamp(66px,9.4vw,145px)/.81 var(--serif);letter-spacing:-.057em;margin:29px 0 32px}
+.hero h1 em {color:var(--gold);font-weight:400}
+.hero-summary {max-width:550px;color:#c5cbd2;line-height:1.9;font-size:15px}
+.hero-buttons {display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}
+.hero-bottom {position:absolute;bottom:32px;left:6%;right:6%;display:flex;justify-content:space-between;color:#87909a;font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+.small-line {width:50px;height:1px;background:var(--gold);display:inline-block;vertical-align:middle;margin-right:14px}
+
+.section-top {display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}
+.section-top p {max-width:410px}
+.stage-controls {display:flex;gap:10px;margin-top:18px}
+.circle-btn {width:46px;height:46px;border-radius:50%;border:1px solid #56606b;color:var(--cream);background:transparent;font-size:21px}
+.circle-btn:hover {border-color:var(--gold);color:var(--gold)}
+.stage-track {display:flex;gap:17px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.stage-card {min-width:clamp(250px,30%,370px);scroll-snap-align:start;border:1px solid var(--line);background:#101923;display:flex;flex-direction:column}
+.stage-visual {height:284px;position:relative;overflow:hidden;display:flex;align-items:end;padding:21px;background:radial-gradient(ellipse at 50% 14%,#ab86573c,transparent 33%),linear-gradient(145deg,#1c2b3c,#0e1119 70%)}
+.stage-card:nth-child(2) .stage-visual {background:radial-gradient(ellipse at 50% 20%,#9eb7d546,transparent 35%),linear-gradient(140deg,#223249,#0b131f)}
+.stage-card:nth-child(3) .stage-visual {background:radial-gradient(ellipse at 60% 20%,#d5b98b40,transparent 36%),linear-gradient(140deg,#1b2e34,#0b1219)}
+.stage-card:nth-child(4) .stage-visual {background:radial-gradient(ellipse at 50% 20%,#8d8cad39,transparent 36%),linear-gradient(140deg,#292d42,#0b1019)}
+.stage-visual:before {content:'';position:absolute;width:80%;height:85%;left:10%;top:3%;border:1px solid #d5b98b45;border-radius:50% 50% 0 0;transform:scaleX(.8)}
+.stage-visual:after {content:'';position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(transparent,#070b10dd)}
+.city-art {position:relative;z-index:1;font:500 65px/.85 var(--serif);color:#ffffff4a;letter-spacing:-.03em;word-break:break-word}
+.stage-info {padding:23px;flex:1;display:flex;flex-direction:column;gap:8px}
+.stage-info h3 {font:500 29px/1.04 var(--serif);margin:5px 0}
+.stage-info p {color:var(--muted);line-height:1.7;margin:0}
+.stage-info a {margin-top:auto;padding-top:13px;color:var(--gold);font-size:11px}
+.stage-all {margin-top:25px}
+
+.pillars-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.pillar {min-height:440px;border:1px solid var(--line);background:linear-gradient(145deg,#172431,#0e151f 70%);position:relative;padding:25px;display:flex;flex-direction:column;justify-content:end;overflow:hidden;text-align:left;color:var(--cream);transition:.3s}
+.pillar:nth-child(2) {background:linear-gradient(150deg,#23303b,#101820)}
+.pillar:nth-child(3) {background:linear-gradient(130deg,#21323a,#0b151d)}
+.pillar:nth-child(4) {background:linear-gradient(130deg,#293041,#0a111a)}
+.pillar:before {content:'';position:absolute;top:-20%;left:15%;width:130%;aspect-ratio:1;border:1px solid #d5b98b26;border-radius:50%;transition:.5s}
+.pillar:hover:before {transform:scale(.8);border-color:#d5b98b90}
+.pillar:hover {transform:translateY(-5px);border-color:#a99270}
+.pillar-num {position:absolute;top:22px;left:23px;color:var(--gold);font-size:12px}
+.pillar h3 {font:500 35px/.98 var(--serif);margin:0 0 18px}
+.pillar p {font-size:12px;color:#aab7c3;line-height:1.8;margin:0 0 18px}
+.pillar-arrow {width:36px;height:36px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold)}
+
+.impact {background:#ece8df;color:#17202a}
+.impact .eyebrow {color:#937447}
+.impact .muted {color:#56616c}
+.metrics {display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30px}
+.metric {padding:20px 28px;border-left:1px solid #b8bdc1}
+.metric:first-child {border:0;padding-left:0}
+.metric b {font:500 clamp(53px,6vw,83px)/1 var(--serif)}
+.metric small {display:block;margin-top:13px;font-size:12px;color:#56616c}
+
+.work-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.work-card {display:flex;min-height:310px;padding:28px;position:relative;align-items:end;text-align:left;border:1px solid var(--line);color:var(--cream);background:linear-gradient(155deg,#1c2b39,#0b111c);overflow:hidden}
+.work-card:nth-child(2) {background:linear-gradient(155deg,#283238,#101a20)}
+.work-card:nth-child(3) {background:linear-gradient(155deg,#202c40,#0d131b)}
+.work-card:nth-child(4) {background:linear-gradient(155deg,#2c2d35,#10151e)}
+.work-card:before {content:'';position:absolute;width:250px;height:250px;border:1px solid #d5b98b50;border-radius:50%;right:-20px;top:-100px}
+.work-card:hover {border-color:var(--gold)}
+.work-card h3 {font:500 43px/1 var(--serif);margin:12px 0 8px}
+.work-card .muted {font-size:12px}
+.work-content {position:relative;z-index:1;max-width:420px}
+
+.research-list {border-top:1px solid var(--line)}
+.research-row {display:grid;grid-template-columns:90px 1fr auto;gap:18px;align-items:start;padding:22px 0;border-bottom:1px solid var(--line)}
+.research-row time {color:var(--gold);font-size:12px}
+.research-row strong {font-size:13px;font-weight:500}
+.research-row p {font-size:11px;color:var(--muted);margin:7px 0 0}
+.research-row span {font-size:10px;color:#d2bd9e}
+
+.about {display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.portrait {aspect-ratio:4/5;border:1px solid #5c5a52;background:radial-gradient(ellipse at 50% 30%,#334558,#101820 72%);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.portrait img {position:absolute;width:100%;height:100%;object-fit:cover;z-index:2}
+.portrait-monogram {font:500 145px var(--serif);color:#ddc09344}
+.portrait-credit {position:absolute;z-index:3;bottom:15px;left:15px;font-size:10px;color:#fff;background:#080e1699;padding:7px}
+.about .muted {font-size:14px}
+
+.foot-cta {background:radial-gradient(ellipse at 50% 0%,#39445355,transparent 60%),#0a1018;padding:125px 0;text-align:center}
+.foot-cta h2 {font:500 clamp(55px,8vw,106px)/.87 var(--serif);max-width:920px;margin:15px auto 31px}
+.foot {padding:32px 0;display:flex;justify-content:space-between;gap:15px;color:#8d9aa5;font-size:11px}
+.foot a:hover {color:var(--gold)}
+
+.modal {position:fixed;inset:0;z-index:300;background:#05080db8;display:none;align-items:center;justify-content:center;padding:22px;backdrop-filter:blur(10px)}
+.modal.open {display:flex}
+.modal-box {position:relative;max-width:730px;max-height:88svh;overflow-y:auto;width:100%;padding:clamp(28px,5vw,60px);border:1px solid #636056;background:#111b28;box-shadow:0 30px 80px #0008}
+.modal-box h2 {font:500 clamp(42px,6vw,66px)/.99 var(--serif);margin:13px 0 21px}
+.modal-box h3 {font-size:12px;color:var(--gold);letter-spacing:.13em;text-transform:uppercase;margin:26px 0 10px}
+.modal-box p {font-size:13px;line-height:1.9;color:#bbc5cf}
+.modal-close {position:absolute;right:18px;top:18px;background:none;border:1px solid var(--line);color:var(--cream);padding:9px 13px;font-size:19px}
+.reveal {opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.reveal.visible {opacity:1;transform:translateY(0)}
+
+@media(max-width:1040px) {
+  .pillars-grid {grid-template-columns:repeat(2,1fr)}
+  .pillar {min-height:340px}
+  .menu {gap:15px}
+  .menu a {font-size:9px}
+  .about {gap:30px}
+}
+@media(max-width:730px) {
+  .header {height:67px}
+  .menu-button {display:block}
+  .menu {display:none;position:absolute;top:67px;left:0;right:0;flex-direction:column;align-items:stretch;padding:18px 6% 30px;background:#0b131f;border-bottom:1px solid var(--line)}
+  .menu.open {display:flex}
+  .menu a {font-size:12px;padding:10px 0}
+  .hero {min-height:760px}
+  .hero h1 {font-size:clamp(65px,14vw,100px)}
+  .hero-art {right:-42%;width:120vw}
+  .hero-bottom {font-size:9px}
+  .section {padding:75px 0}
+  .section-top {display:block}
+  .section-top p {margin-bottom:20px}
+  .pillars-grid,.work-grid,.about {grid-template-columns:1fr}
+  .pillar {min-height:290px}
+  .metrics {grid-template-columns:repeat(2,1fr);gap:15px}
+  .metric {padding:16px!important;border-left:1px solid #b8bdc1!important}
+  .stage-card {min-width:81%}
+  .about {gap:28px}
+  .portrait {max-width:400px}
+  .research-row {grid-template-columns:52px 1fr;gap:10px}
+  .research-row span {grid-column:2}
+  .foot {flex-direction:column}
+  .work-card {min-height:270px}
+  .foot-cta {padding:85px 0}
+}
+@media(prefers-reduced-motion:reduce) {
+  html {scroll-behavior:auto}
+  .reveal {opacity:1;transform:none;transition:none}
+  *,*:before,*:after {animation:none!important;transition:none!important}
+}
+</style>
+</head>
+
+<body>
+<header class="header">
+  <a class="brand" href="#home" aria-label="Mohamed Falfoul Home">MF<span>.</span></a>
+  <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+  <nav class="menu" id="menu" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#global-stage">Global Stage</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#impact">Impact</a>
+    <a href="#work">Selected Work</a>
+    <a href="#research">Research</a>
+    <a href="#about">About</a>
+    <a class="menu-cta" href="#contact">Get in Touch ↗</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-art" aria-hidden="true">
+    <div class="beam"></div>
+    <div class="halo"></div>
+  </div>
+  <div class="wrap" style="width:100%">
+    <div class="hero-content">
+      <span class="eyebrow"><span class="small-line"></span>Mohamed Falfoul / Official Portfolio</span>
+      <h1>Ideas into<br>Action.<br>Voices into <em>Impact.</em></h1>
+      <p class="hero-summary">Working at the intersection of child and adolescent mental health, institutional strategy, capacity building, and international youth advocacy.</p>
+      <div class="hero-buttons">
+        <a class="button" href="#expertise">Explore My Work ↗</a>
+        <a class="button ghost" href="#global-stage">Discover Global Stage ↓</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <span>Psychiatry · Strategy · Leadership</span>
+    <span>Scroll to discover ↓</span>
+  </div>
+</section>
+
+<section class="section" id="global-stage">
+  <div class="wrap">
+    <div class="section-top reveal">
+      <div>
+        <span class="eyebrow">01 / Global Stage</span>
+        <h2 class="section-title">A Voice Across<br><em>Borders.</em></h2>
+      </div>
+      <div>
+        <p class="muted">From Tunisia to international forums, exploring ideas that shape healthier, more empowered communities.</p>
+        <div class="stage-controls">
+          <button class="circle-btn" id="stagePrev" aria-label="Previous engagement">←</button>
+          <button class="circle-btn" id="stageNext" aria-label="Next engagement">→</button>
+        </div>
+      </div>
+    </div>
+    <div id="stageTrack" class="stage-track" aria-label="International engagements"></div>
+    <div class="stage-all">
+      <span class="tag">Selected international engagements · Additional photography coming soon</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="expertise">
+  <div class="wrap">
+    <div class="section-top reveal">
+      <div>
+        <span class="eyebrow">02 / Multidisciplinary Expertise</span>
+        <h2 class="section-title">Four Disciplines.<br><em>One Purpose.</em></h2>
+      </div>
+      <p class="muted">Four complementary lenses for understanding people, shaping institutions, and creating sustainable impact.</p>
+    </div>
+    <div class="pillars-grid" id="pillarGrid"></div>
+  </div>
+</section>
+
+<section class="section impact" id="impact">
+  <div class="wrap">
+    <div class="section-top reveal">
+      <div>
+        <span class="eyebrow">03 / Impact at a Glance</span>
+        <h2 class="section-title">Turning Expertise<br>Into Lasting Change.</h2>
+      </div>
+      <p class="muted">Selected indicators from the current professional CV. Figures pending final validation.</p>
+    </div>
+    <div class="metrics">
+      <div class="metric"><b>1,190+</b><small>Training hours delivered</small></div>
+      <div class="metric"><b>2,500+</b><small>Participants trained</small></div>
+      <div class="metric"><b>78+</b><small>Sessions facilitated</small></div>
+      <div class="metric"><b>20+</b><small>Institutions supported</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-top reveal">
+      <div>
+        <span class="eyebrow">04 / Selected Work</span>
+        <h2 class="section-title">From Vision<br>to Impact.</h2>
+      </div>
+      <p class="muted">Selected initiatives in institutional development, youth leadership, clinical learning and mental health education.</p>
+    </div>
+    <div class="work-grid" id="workGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="research">
+  <div class="wrap">
+    <div class="section-top reveal">
+      <div>
+        <span class="eyebrow">05 / Scientific Work</span>
+        <h2 class="section-title">Evidence. Ideas.<br><em>Contributions.</em></h2>
+      </div>
+      <p class="muted">Scientific posters and conference presentations in child and adolescent psychiatry. Posters and co-authorships are distinguished from peer-reviewed journal articles.</p>
+    </div>
+    <div class="research-list" id="researchList"></div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="portrait reveal">
+      <div class="portrait-monogram" aria-hidden="true">MF.</div>
+      <img id="portraitImage" alt="Portrait of Mohamed Falfoul" loading="lazy" style="display:none">
+      <span id="portraitCredit" class="portrait-credit">Portrait coming soon</span>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">06 / About Mohamed</span>
+      <h2 class="section-title">One Career.<br><em>Multiple Dimensions.</em></h2>
+      <p class="muted">Mohamed Falfoul is a medical resident in Child & Adolescent Psychiatry whose professional activity extends into strategy consulting, organizational development, capacity building and youth advocacy.</p>
+      <p class="muted">His work connects clinical experience with public policy, institutional transformation and practical training — helping bridge the distance between ideas, people and systems.</p>
+      <p class="muted">From multidisciplinary hospital teams to international youth platforms, his approach brings together scientific perspectives and participatory action.</p>
+      <a class="arrow-link" href="https://www.linkedin.com/in/mohamed-falfoul-702b377b" target="_blank" rel="noopener noreferrer">Explore professional profile ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="foot-cta" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">07 / Connect & Collaborate</span>
+    <h2>Let's Create<br><em>Meaningful Impact.</em></h2>
+    <p class="muted">Speaking engagements · Research · Strategic collaborations · Training</p>
+    <div class="hero-buttons" style="justify-content:center">
+      <a class="button" href="mailto:falfoul.md@gmail.com">Start a Conversation ↗</a>
+      <a class="button ghost" href="https://www.linkedin.com/in/mohamed-falfoul-702b377b" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="year"></span> Mohamed Falfoul · All rights reserved.</span>
+  <span>Portfolio preview · Content and imagery pending final approval</span>
+  <a href="https://www.instagram.com/falfoulmed/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Close details">×</button>
+    <span class="eyebrow" id="modalTag">Expertise</span>
+    <h2 id="modalTitle"></h2>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+/* PHOTOS: Later we can upload actual images to an "images" folder
+   and replace these paths. Do not use stock portraits as Mohamed. */
+const IMAGES = {
+  portrait: ""
+};
+
+const stages = [
+  {
+    city:"Tunisia",place:"Tunis",year:"2026",
+    title:"TEDxSESAMEUniversity",
+    role:"Invited speaker",
+    detail:"Beyond the Script — public speaking and youth empowerment.",
+    url:"https://tedx.universitesesame.com/"
+  },
+  {
+    city:"Russia",place:"Moscow",year:"2026",
+    title:"Generation of Unity",
+    role:"International youth forum participant",
+    detail:"Conversations on artificial intelligence and the future of young people.",
+    url:""
+  },
+  {
+    city:"Qatar",place:"Doha",year:"2026",
+    title:"Empower 2026",
+    role:"Workshop facilitator",
+    detail:"Youth declaration co-creation and eco-resilience education.",
+    url:"https://www.linkedin.com/in/mohamed-falfoul-702b377b"
+  },
+  {
+    city:"Czechia",place:"Prague",year:"2025",
+    title:"World Congress of Psychiatry",
+    role:"Early Career Psychiatrist presenter",
+    detail:"Contributed to an ECP session and the congress media committee.",
+    url:""
+  },
+  {
+    city:"Germany",place:"Hamburg",year:"2026",
+    title:"IACAPAP World Congress",
+    role:"Scientific poster presenter",
+    detail:"Research on parental factors in child psychiatry settings.",
+    url:""
+  }
+];
+
+const pillars = [
+  {
+    number:"01",
+    title:"Child & Adolescent Psychiatry",
+    short:"Clinical practice · Neurodevelopment · Research & education",
+    sections:[
+      ["Clinical Practice","Medical resident working across inpatient, outpatient and emergency settings in child and adolescent psychiatry. Rotations documented at Military Hospital (Tunis), Razi University Hospital, and child psychiatry departments in Monastir and Sfax."],
+      ["Scientific Contributions","Research posters on ADHD, parental factors, developmental concerns and childhood trauma; conference presentations in Montreal, Hamburg, Djerba and national psychiatry meetings."],
+      ["Medical Education","Medical studies at the Faculty of Medicine of Sfax, followed by postgraduate education in perinatal mental health, school and university medicine, and therapeutic patient education."],
+      ["Professional Engagement","Coordinated a seven-session seminar on AI and child development for 27 residents and clinicians; public psychoeducation on screen exposure and children."]
+    ]
+  },
+  {
+    number:"02",
+    title:"Strategy & Organizational Development",
+    short:"Youth strategy · Institutional governance · Education policy",
+    sections:[
+      ["Youth Strategy","Contributed to national youth policy and strategic programs through the Tunisian Youth Consulting Bureau and Ministry of Youth and Sports (2024–2026)."],
+      ["Organizational Development","Supported YOUTH CLUBs with strategic repositioning, governance design and internal institutional structuring across 10 regions."],
+      ["Program Design","Developed Wallah We Can Junior, bringing together youth recruitment, training pathways and action-based leadership for 18 young participants."],
+      ["Systems and Governance","Designed governance documentation, formalized roles across seven organizational units and developed training-system architecture with six learning levels."],
+      ["Education Policy","Contributed to discussions and policy development on meaningful student involvement and education systems through youth and medical-student networks."]
+    ]
+  },
+  {
+    number:"03",
+    title:"Training & Capacity Building",
+    short:"Training design · Facilitation · Training of Trainers",
+    sections:[
+      ["Training Impact","Current CV figures: over 1,190 hours delivered, 2,500 people trained, 78 sessions facilitated and 20 institutions supported. Figures pending final validation."],
+      ["Focus Areas","Human rights, child protection, youth participation, civic engagement, advocacy, mental health, first aid, education, leadership and organizational strategy."],
+      ["Institutional Training Design","Developed structured learning pathways and a Training of Trainers system for youth-led organizations, replacing fragmented ad-hoc workshops with scalable curriculum architecture."],
+      ["Selected Sessions","Online mental health awareness training reaching 210 students with Education Above All; Basic Life Support training for 32 teachers; screen-use psychoeducation for over 30 families."]
+    ]
+  },
+  {
+    number:"04",
+    title:"Leadership, Advocacy & International Representation",
+    short:"International forums · Youth policy · Public engagement",
+    sections:[
+      ["International Representation","Youth-oriented participation and contributions across international platforms, including Education Above All and international youth policy discussions. Roles for each event are listed precisely in the Global Stage section."],
+      ["Advocacy and Policy","Contributions to education access, youth rights, health and meaningful participation in policy processes."],
+      ["Professional Networks","Engagements mentioned in the CV include the WPA Early Career Psychiatrists network, IACAPAP early career group, Global Mental Health Action Network and WHO Eastern Mediterranean mental health coalition. Membership does not imply employment by these institutions."],
+      ["Public Communication","TEDx participation, scientific speaking, seminar presentations and media commentary on child and adolescent mental health."]
+    ]
+  }
+];
+
+const works = [
+  {
+    tag:"Governance & Strategy",
+    title:"Building Stronger Youth Institutions",
+    teaser:"Strategic repositioning and governance frameworks for YOUTH CLUBs.",
+    parts:[
+      ["Challenge","Support the transition of a national youth-led network toward a scalable, more structured institutional model."],
+      ["Approach","Developed governance arrangements, role definitions, organizational strategy and decision-making architecture."],
+      ["Outputs","Governance documentation for seven organizational units; priorities and initiatives across ten regions."]
+    ]
+  },
+  {
+    tag:"Youth Empowerment",
+    title:"Designing a Leadership Pipeline",
+    teaser:"The Wallah We Can Junior empowerment program.",
+    parts:[
+      ["Challenge","Create a structured pathway through which young people could build initiative and leadership skills."],
+      ["Approach","Designed the program, recruitment pathway, training curriculum, supervision and youth-led action framework."],
+      ["Outputs","Guidance and structured learning for 18 young participants."]
+    ]
+  },
+  {
+    tag:"Clinical Education",
+    title:"Exploring AI & Child Development",
+    teaser:"A seven-session interdisciplinary learning series at Razi Hospital.",
+    parts:[
+      ["Challenge","Translate fast-developing AI issues into clinically relevant discussions for practitioners."],
+      ["Approach","Coordinated a hospital-based learning series covering medical applications, child development and ethical concerns."],
+      ["Outputs","Seven sessions involving 27 residents and clinicians, including two presentations by Mohamed."]
+    ]
+  },
+  {
+    tag:"Mental Health Education",
+    title:"From Anxiety to Collective Action",
+    teaser:"Capacity-building and youth participation at Empower Qatar.",
+    parts:[
+      ["Challenge","Help young participants connect environmental concerns with practical collective action."],
+      ["Approach","Facilitated eco-resilience learning and co-creation activities supporting a youth declaration."],
+      ["Outputs","Training and facilitated participation; detailed results to be confirmed with Mohamed."]
+    ]
+  }
+];
+
+const research = [
+  ["2026","Evolution of Clinical Profiles and Referral Pathways in ADHD","9th International Francophone ADHD Colloquium · Montreal","Poster Presenter"],
+  ["2026","ADHD Symptoms among Parents of Children with ADHD","9th International Francophone ADHD Colloquium · Montreal","Poster Presenter"],
+  ["2026","Associated Factors with Maternal Alexithymia in a Child Psychiatry Setting","IACAPAP World Congress · Hamburg","Poster Presenter"],
+  ["2026","Associated Factors with Maternal Parenting Styles among Adolescents","IACAPAP World Congress · Hamburg","Poster Presenter"],
+  ["2026","Evaluation of a Structured Therapeutic Education Program for Parents of Children with Autism Spectrum Disorder","National Research Days in Psychiatry","Poster Presenter"],
+  ["2026","ADHD in Girls: Toward Better School Identification","National Research Days in Psychiatry","Poster Presenter"],
+  ["2025","Clinical Features of Children Evaluated After Traumatic Event Exposure","International Congress of Community Medicine · Mahdia","Co-author"],
+  ["2026","Enfants de population militaire et exposition à un évènement traumatique","L’Encéphale Congress · Paris","Co-author"]
+];
+
+const stageTrack=document.querySelector("#stageTrack");
+
+stageTrack.innerHTML=stages.map(e=>`
+  <article class="stage-card">
+    <div class="stage-visual">
+      <span class="city-art">${e.place}</span>
+    </div>
+    <div class="stage-info">
+      <span class="tag">${e.city} · ${e.year}</span>
+      <h3>${e.title}</h3>
+      <span class="tag">${e.role}</span>
+      <p>${e.detail}</p>
+      ${e.url?`<a href="${e.url}" target="_blank" rel="noopener noreferrer">View event ↗</a>`:""}
+    </div>
+  </article>
+`).join("");
+
+document.querySelector("#stagePrev").onclick=()=>stageTrack.scrollBy({left:-stageTrack.clientWidth*.7,behavior:"smooth"});
+document.querySelector("#stageNext").onclick=()=>stageTrack.scrollBy({left:stageTrack.clientWidth*.7,behavior:"smooth"});
+
+document.querySelector("#pillarGrid").innerHTML=pillars.map((p,i)=>`
+  <button class="pillar reveal" data-pillar="${i}">
+    <span class="pillar-num">${p.number} / Expertise</span>
+    <h3>${p.title}</h3>
+    <p>${p.short}</p>
+    <span class="pillar-arrow">↗</span>
+  </button>
+`).join("");
+
+document.querySelector("#workGrid").innerHTML=works.map((w,i)=>`
+  <button class="work-card reveal" data-work="${i}">
+    <div class="work-content">
+      <span class="tag">${w.tag}</span>
+      <h3>${w.title}</h3>
+      <p class="muted">${w.teaser}</p>
+      <span class="arrow-link">View case study ↗</span>
+    </div>
+  </button>
+`).join("");
+
+document.querySelector("#researchList").innerHTML=research.map(r=>`
+  <div class="research-row">
+    <time>${r[0]}</time>
+    <div><strong>${r[1]}</strong><p>${r[2]}</p></div>
+    <span>${r[3]}</span>
+  </div>
+`).join("");
+
+const modal=document.querySelector("#modal");
+let previousFocus=null;
+
+function openDetail(title,tag,sections){
+  previousFocus=document.activeElement;
+  document.querySelector("#modalTitle").textContent=title;
+  document.querySelector("#modalTag").textContent=tag;
+  document.querySelector("#modalBody").innerHTML=sections.map(([h,p])=>`
+    <section><h3>${h}</h3><p>${p}</p></section>
+  `).join("");
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden","false");
+  document.body.classList.add("lock");
+  document.querySelector("#modalClose").focus();
+}
+
+function closeDetail(){
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden","true");
+  document.body.classList.remove("lock");
+  if(previousFocus) previousFocus.focus();
+}
+
+document.querySelector("#pillarGrid").addEventListener("click",e=>{
+  const b=e.target.closest("[data-pillar]");
+  if(b){
+    const p=pillars[Number(b.dataset.pillar)];
+    openDetail(p.title,"Expertise / "+p.number,p.sections);
+  }
+});
+
+document.querySelector("#workGrid").addEventListener("click",e=>{
+  const b=e.target.closest("[data-work]");
+  if(b){
+    const w=works[Number(b.dataset.work)];
+    openDetail(w.title,w.tag,w.parts);
+  }
+});
+
+document.querySelector("#modalClose").onclick=closeDetail;
+modal.addEventListener("click",e=>{if(e.target===modal)closeDetail()});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"&&modal.classList.contains("open"))closeDetail();
+  if(e.key==="Tab"&&modal.classList.contains("open")){
+    const f=[...modal.querySelectorAll("button,a,[tabindex]:not([tabindex='-1'])")];
+    if(e.shiftKey&&document.activeElement===f[0]){
+      e.preventDefault();f.at(-1).focus();
+    }else if(!e.shiftKey&&document.activeElement===f.at(-1)){
+      e.preventDefault();f[0].focus();
+    }
+  }
+});
+
+const mb=document.querySelector("#menuButton");
+const menu=document.querySelector("#menu");
+mb.onclick=()=>{
+  const open=menu.classList.toggle("open");
+  mb.setAttribute("aria-expanded",String(open));
+  mb.textContent=open?"✕ Close":"☰ Menu";
+};
+menu.querySelectorAll("a").forEach(a=>a.onclick=()=>{
+  menu.classList.remove("open");
+  mb.setAttribute("aria-expanded","false");
+  mb.textContent="☰ Menu";
+});
+
+document.querySelector("#year").textContent=new Date().getFullYear();
+
+if(IMAGES.portrait){
+  const img=document.querySelector("#portraitImage");
+  img.onload=()=>{
+    img.style.display="block";
+    document.querySelector("#portraitCredit").textContent="Mohamed Falfoul";
+  };
+  img.onerror=()=>img.style.display="none";
+  img.src=IMAGES.portrait;
+}
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.08});
+
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
