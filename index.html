@@ -184,7 +184,7 @@ html[data-theme="light"] .poster-footer a {color:#795529}
   html[data-theme="light"] .menu {background:#fffdf9;border-color:#d4c9bb}
   html[data-theme="light"] .metric {border-left-color:#bcb1a5!important}
 }
-/* V4.6 — TRAINER PORTFOLIO ARCHIVE */
+/* V4.7 — TRAINER PORTFOLIO ARCHIVE + MOBILE EXPERIENCE */
 .trainer-page{padding-top:78px}
 .trainer-hero{padding:84px 0 76px;background:radial-gradient(ellipse at 82% 12%,#ac8a572a,transparent 51%),var(--bg);border-bottom:1px solid var(--line)}
 .trainer-hero h1{font:500 clamp(72px,8vw,126px)/.86 var(--serif);letter-spacing:-.054em;margin:26px 0}
@@ -245,6 +245,169 @@ html[data-theme="light"] .trainer-chip.active,html[data-theme="light"] .trainer-
 html[data-theme="light"] .trainer-pillar-link:hover{color:#fffaf3}
 @media(max-width:1000px){.trainer-filters{grid-template-columns:repeat(2,1fr)}.trainer-summary{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.trainer-page{padding-top:68px}.trainer-hero{padding:62px 0}.trainer-hero h1{font-size:clamp(64px,12vw,85px)}.trainer-main{padding:55px 0}.trainer-filters{grid-template-columns:1fr}.trainer-archive{grid-template-columns:1fr}.trainer-chart{height:130px}.trainer-summary-item{padding:18px}.trainer-record h3{font-size:29px}.trainer-modal-data{grid-template-columns:1fr}}
+
+/* ═══════════════════════════════════════════════════════════
+   V4.7 — MOBILE EXPERIENCE / Desktop styling preserved
+   Layout: 320px → wide displays. No global horizontal clipping.
+   ═══════════════════════════════════════════════════════════ */
+:root { --mobile-header-height:68px; }
+button, a, select, input { touch-action:manipulation; }
+.wrap, .section, .section-head, .atlas-layout, .spotlight, .spotlight-copy,
+.spotlight-media, .metrics, .metric, .research-row, .trainer-summary,
+.trainer-summary-item, .trainer-record, .detail-hero-content,
+.detail-work-card, .detail-evidence, .focus-card { min-width:0; }
+.section-title, .detail-hero h1, .trainer-hero h1, .contact h2,
+.spotlight-copy h3, .event-body h4, .work-card h3, .trainer-record h3,
+.detail-work-card h3, .evidence-card h3, .focus-card h3, .detail-next h2,
+.modal-panel h2, .detail-intro-quote { overflow-wrap:anywhere; }
+.detail-mobile-nav {display:none;}
+.trainer-search-field {margin-bottom:14px;}
+.trainer-filter-toggle {display:none;}
+.trainer-filter-panel {display:block;}
+@media (min-width:761px) {
+  .trainer-filters {grid-template-columns:repeat(3,minmax(0,1fr));}
+  .trainer-search-field {max-width:680px;}
+}
+@media (max-width:760px) {
+  html { scroll-padding-top:78px; }
+  .wrap {padding-inline:clamp(16px,5vw,26px);}
+  .header {padding-inline:clamp(16px,5vw,25px);}
+  .brand {font-size:34px;}
+  .menu {z-index:310;gap:0;padding:9px 5% max(20px,env(safe-area-inset-bottom));box-shadow:0 18px 26px #0005;}
+  .menu a {display:flex;align-items:center;min-height:48px;font-size:12px;border-bottom:1px solid var(--line);}
+  .menu .nav-cta {justify-content:center;margin-top:10px;min-height:48px;}
+  .header-actions {gap:8px;}
+  .theme-toggle,.menu-toggle {min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;}
+  .hero {min-height:100svh;padding:120px 0 117px;}
+  .hero .wrap {width:100%;}
+  .hero h1 {font-size:clamp(54px,11.8vw,82px);line-height:.9;letter-spacing:-.055em;margin:26px 0 24px;}
+  .hero-summary {font-size:14px;line-height:1.8;max-width:540px;}
+  .hero-actions {margin-top:29px;}
+  .hero-bottom {left:5%;right:5%;bottom:20px;gap:8px;font-size:8px;letter-spacing:.07em;}
+  .hero-bottom span:last-child {text-align:right;flex-shrink:0;}
+  .section {padding:67px 0;}
+  .section-title {font-size:clamp(43px,11vw,68px);line-height:.94;letter-spacing:-.043em;}
+  .section-head {margin-bottom:28px;}
+  .section-head>p {max-width:none;}
+  .spotlight {display:block;width:100%;min-width:0;min-height:0;overflow:hidden;}
+  .spotlight-media {width:100%;min-height:0;height:clamp(200px,61vw,340px);}
+  .spotlight-copy {width:100%;padding:clamp(18px,6vw,30px);}
+  .spotlight-copy h3 {font-size:clamp(36px,9.4vw,58px);line-height:1.02;margin:15px 0;letter-spacing:-.03em;overflow-wrap:anywhere;hyphens:auto;}
+  .spotlight-copy>p {font-size:13px;line-height:1.8;}
+  .spotlight-city {font-size:clamp(55px,14vw,80px);left:17px;bottom:17px;}
+  .spotlight-caption {top:12px;left:12px;font-size:8px;}
+  .spotlight-meta {margin:10px 0 16px;}
+  .spotlight-copy .button {width:100%;min-height:46px;}
+  .spot-controls {display:grid;grid-template-columns:46px 46px minmax(0,1fr);gap:9px;margin-top:17px;}
+  .round-control {width:46px;height:46px;}
+  .autoplay-toggle {min-height:46px;padding:8px 10px;font-size:9px;white-space:normal;}
+  .autoplay-indicator {width:100%;}
+  .archive-bar {display:block;margin:45px 0 15px;}
+  .archive-bar h3 {font-size:34px;}
+  .filters {display:flex;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;gap:8px;margin:15px -5vw 0;padding:0 5vw 12px;scrollbar-width:thin;}
+  .filter-btn {flex:0 0 auto;min-height:44px;scroll-snap-align:start;}
+  .event-grid {gap:14px;}
+  .event-visual {height:200px;}
+  .event-body {padding:20px;}
+  .event-card {min-width:0;}
+  .event-body h4 {font-size:30px;}
+  .pillars-grid {gap:12px;}
+  .pillar {min-height:235px;padding:20px;}
+  .pillar h3 {font-size:clamp(28px,8vw,37px);}
+  .map-shell,.real-map {height:360px;min-height:360px;}
+  .real-map .leaflet-control-zoom {margin-top:12px;margin-left:12px;}
+  .real-map .leaflet-control-zoom a {width:37px;height:37px;line-height:37px;}
+  .map-overline {top:auto;left:10px;bottom:32px;max-width:66%;font-size:8px;padding:8px;letter-spacing:.07em;}
+  .map-reset {top:11px;right:10px;min-height:40px;padding:10px 12px;}
+  .atlas-info {padding:23px;min-height:0;}
+  .atlas-info h3 {font-size:clamp(45px,12vw,65px);}
+  .atlas-chip {min-height:44px;}
+  .metrics {grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+  .metric {padding:12px 5px!important;min-width:0;}
+  .metric b {display:block;font-size:clamp(33px,10vw,58px);line-height:1.07;letter-spacing:-.06em;white-space:nowrap;}
+  .metric small {font-size:10px;line-height:1.5;overflow-wrap:anywhere;}
+  .research-row {grid-template-columns:44px minmax(0,1fr);}
+  .research-actions {gap:9px;}
+  .poster-btn {min-height:44px;}
+  .work-card {min-height:245px;padding:23px;}
+  .work-card h3 {font-size:36px;}
+  .about-layout {gap:28px;}
+  .portrait {width:100%;}
+  .contact {padding:80px 0;}
+  .contact h2 {font-size:clamp(53px,13vw,83px);}
+  .contact-actions .button {min-height:48px;}
+  .footer {line-height:1.7;gap:13px;}
+  .detail-hero {min-height:0;padding:56px 0 72px;}
+  .detail-hero h1 {font-size:clamp(43px,11.3vw,74px);line-height:.96;letter-spacing:-.045em;}
+  .detail-lead {font-size:20px;line-height:1.4;}
+  .breadcrumb {gap:9px;margin-bottom:30px;}
+  .detail-mobile-nav {display:flex;align-items:center;gap:12px;padding-block:9px;}
+  .detail-mobile-nav label {flex:none;color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;}
+  .detail-mobile-nav select {flex:1;min-width:0;min-height:44px;padding:8px 12px;background:var(--bg2);border:1px solid var(--line);color:var(--cream);font:12px var(--sans);}
+  .detail-subnav-inner {display:none;}
+  .detail-section {padding:64px 0;scroll-margin-top:138px;}
+  .detail-intro-quote {font-size:clamp(40px,11vw,56px);}
+  .detail-paragraph {font-size:14px;line-height:1.85;}
+  .detail-aside {margin:10px 0 6px;}
+  .focus-card,.detail-work-card,.evidence-card {min-height:0;padding:24px;}
+  .focus-card h3,.detail-work-card h3,.evidence-card h3 {font-size:clamp(28px,8vw,39px);}
+  .timeline-item h3 {font-size:30px;}
+  .trainer-pillar-link {min-height:46px;align-items:center;max-width:100%;}
+  .detail-next {padding:55px 0;}
+  .detail-next h2 {font-size:clamp(35px,9vw,48px);}
+  .modal {padding:10px;align-items:center;}
+  .modal-panel {width:100%;max-height:calc(100dvh - 20px);padding:48px 18px 22px;overscroll-behavior:contain;}
+  .modal-panel h2 {font-size:clamp(35px,9vw,55px);}
+  .modal-close {top:9px;right:9px;min-height:44px;min-width:44px;}
+  .poster-viewer {min-height:230px;}
+  .poster-viewer img {max-height:52svh;}
+  .poster-viewer iframe {height:52svh;}
+  .poster-placeholder {min-height:240px;padding:30px 15px;}
+  .trainer-page {padding-top:68px;}
+  .trainer-hero {padding:50px 0 54px;}
+  .trainer-hero h1 {font-size:clamp(52px,12.3vw,75px);line-height:.93;}
+  .trainer-hero p {font-size:13px;}
+  .trainer-summary {grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;}
+  .trainer-summary-item {padding:15px 12px;}
+  .trainer-summary-item b {font-size:clamp(34px,10vw,51px);white-space:nowrap;letter-spacing:-.05em;}
+  .trainer-summary-item small {font-size:10px;}
+  .trainer-cta {gap:9px;}
+  .trainer-cta .button {width:100%;min-height:47px;}
+  .trainer-main {padding:55px 0 80px;}
+  .trainer-chart {height:115px;gap:6px;}
+  .trainer-year-number {font-size:9px;}
+  .trainer-controls {padding:15px;margin:20px 0;}
+  .trainer-field input,.trainer-field select {font-size:16px;min-height:47px;}
+  .trainer-filter-toggle {display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;margin-top:5px;background:transparent;color:var(--gold);border:1px solid var(--line);padding:9px 13px;font-size:12px;font-weight:700;}
+  .trainer-filter-toggle span {font-size:17px;}
+  .trainer-filter-panel {display:none;padding-top:16px;}
+  .trainer-filter-panel.open {display:block;}
+  .trainer-filters {grid-template-columns:1fr;gap:12px;}
+  .trainer-categories {margin-top:16px;max-height:184px;overflow-y:auto;gap:8px;}
+  .trainer-chip {min-height:43px;}
+  .trainer-controls-bottom {margin-top:14px;align-items:center;}
+  .trainer-record {min-height:0;padding:19px;}
+  .trainer-record h3 {font-size:clamp(26px,7.7vw,33px);}
+  .trainer-record-bottom {gap:8px;}
+  .trainer-record-bottom b {font-size:10px;}
+  .trainer-pagination {gap:8px;}
+  .trainer-pagination button {min-height:44px;padding:9px 11px;}
+  .trainer-pagination span {font-size:10px;}
+  .trainer-modal-data {grid-template-columns:1fr;}
+}
+@media (max-width:359px) {
+  .hero h1 {font-size:clamp(48px,11.3vw,64px);}
+  .hero-bottom {font-size:7px;}
+  .hero-actions .button {width:100%;}
+  .spotlight-copy h3 {font-size:36px;}
+  .spot-controls {grid-template-columns:42px 42px minmax(0,1fr);}
+  .round-control {width:42px;height:44px;}
+  .metric b {font-size:clamp(30px,9.5vw,37px);}
+  .map-overline {max-width:57%;}
+}
+html[data-theme="light"] .detail-mobile-nav select {background:#fffdfa;color:#253442;border-color:#d6cbbc;}
+html[data-theme="light"] .trainer-filter-toggle {color:#795529;border-color:#d6cbbc;}
+
 </style>
 </head>
 <body>
@@ -431,14 +594,14 @@ $('#workGrid').innerHTML=works.map((w,i)=>`<button class="work-card reveal" data
 /* Deep pillar pages: full screen, shareable URLs and browser Back support */
 function renderPillarPage(p){const index=pillars.indexOf(p);const next=pillars[(index+1)%pillars.length];const focus=p.focus.map(([h,d],i)=>`<article class="focus-card"><small>0${i+1} / FOCUS AREA</small><h3>${esc(h)}</h3><p>${esc(d)}</p></article>`).join('');const journey=p.journey.map(([date,role,org,description])=>`<article class="timeline-item"><span class="timeline-date">${esc(date)}</span><div><h3>${esc(role)}</h3><span class="timeline-org">${esc(org)}</span><p>${esc(description)}</p></div></article>`).join('');const projects=p.projects.map((c,i)=>`<button class="detail-work-card" data-project="${i}"><span class="tag">${esc(c.label)}</span><h3>${esc(c.title)}</h3><p>${esc(c.description)}</p><span class="text-link">Explore Contribution ↗</span></button>`).join('');let evidence='';if(p.researchIds.length){evidence=p.researchIds.map(i=>{const r=research[i];return `<article class="evidence-card"><span class="tag">${esc(r.year)} · ${esc(r.role)}</span><h3>${esc(r.title)}</h3><p>${esc(r.event)}</p><button class="text-link" data-poster="${i}">View Poster ↗</button></article>`}).join('')}else{evidence=p.evidence.map(([h,d])=>`<article class="evidence-card"><span class="tag">Evidence & Outputs</span><h3>${esc(h)}</h3><p>${esc(d)}</p></article>`).join('')}
 $('#pillarPage').innerHTML=`<section class="detail-hero"><div class="wrap detail-hero-inner"><div class="breadcrumb"><a href="#expertise">← All Expertise</a><span>/</span><span>${esc(p.number)} / 04</span></div><div class="detail-hero-content"><div><span class="eyebrow">MOHAMED FALFOUL / DISCIPLINE ${esc(p.number)}</span><h1>${esc(p.title)}</h1><p class="detail-lead">${esc(p.lead)}</p>${p.slug==='training'?'<a class="trainer-pillar-link" href="#trainer-portfolio" target="_blank" rel="noopener noreferrer">Explore Full Trainer Portfolio ↗</a>':''}</div><div class="detail-hero-index" aria-hidden="true">${esc(p.number)}</div></div></div></section>
-<nav class="detail-subnav" aria-label="On this page"><div class="wrap detail-subnav-inner"><button data-detail-scroll="detail-overview">Overview</button><button data-detail-scroll="detail-focus">Focus Areas</button><button data-detail-scroll="detail-journey">Experience</button><button data-detail-scroll="detail-projects">Selected Work</button><button data-detail-scroll="detail-evidence">Evidence</button><a class="detail-subnav back-home" href="#expertise" style="padding:20px 15px;font-size:10px">← All Pillars</a></div></nav>
+<nav class="detail-subnav" aria-label="On this page"><div class="wrap detail-mobile-nav"><label for="pillarSectionSelect">Explore this pillar</label><select id="pillarSectionSelect" aria-label="Jump to pillar section"><option value="detail-overview">Overview</option><option value="detail-focus">Focus areas</option><option value="detail-journey">Experience</option><option value="detail-projects">Selected work</option><option value="detail-evidence">Evidence</option></select></div><div class="wrap detail-subnav-inner"><button data-detail-scroll="detail-overview">Overview</button><button data-detail-scroll="detail-focus">Focus Areas</button><button data-detail-scroll="detail-journey">Experience</button><button data-detail-scroll="detail-projects">Selected Work</button><button data-detail-scroll="detail-evidence">Evidence</button><a class="detail-subnav back-home" href="#expertise" style="padding:20px 15px;font-size:10px">← All Pillars</a></div></nav>
 <section class="detail-section" id="detail-overview"><div class="wrap detail-two-col"><div><span class="eyebrow">01 / Overview</span><div class="detail-aside"><span class="tag">The Perspective</span><p class="muted">${esc(p.short)}</p></div></div><div><h2 class="detail-intro-quote">${esc(p.strap)}</h2>${p.intro.map(s=>`<p class="detail-paragraph">${esc(s)}</p>`).join('')}</div></div></section>
 <section class="detail-section alt" id="detail-focus"><div class="wrap"><span class="eyebrow">02 / Capabilities</span><h2 class="section-title">Areas of<br><em>Focus.</em></h2><div class="focus-grid">${focus}</div></div></section>
 <section class="detail-section" id="detail-journey"><div class="wrap"><div class="section-head"><div><span class="eyebrow">03 / Professional Journey</span><h2 class="section-title">Experience &<br><em>Engagement.</em></h2></div><p class="muted">A curated selection from Mohamed's professional record, with chronology and roles maintained as stated in the working CV.</p></div><div class="timeline">${journey}</div></div></section>
 <section class="detail-section alt" id="detail-projects"><div class="wrap"><span class="eyebrow">04 / Work in Practice</span><h2 class="section-title">Selected<br><em>Contributions.</em></h2><div class="detail-work-grid">${projects}</div>${p.slug==='training'?'<a class="trainer-pillar-link" href="#trainer-portfolio" target="_blank" rel="noopener noreferrer">Browse All Recorded Sessions ↗</a>':''}</div></section>
 <section class="detail-section" id="detail-evidence"><div class="wrap"><div class="section-head"><div><span class="eyebrow">05 / Evidence & Deliverables</span><h2 class="section-title">${esc(p.evidenceTitle)}.</h2></div><p class="muted">${esc(p.evidenceIntro)}</p></div><div class="detail-evidence">${evidence}</div><p class="detail-note">${esc(p.note)}</p></div></section>
 <div class="wrap detail-next"><div><span class="eyebrow">Continue Exploring</span><h2>Next: ${esc(next.title)}</h2></div><a class="button ghost" href="#pillar/${next.slug}">Explore Next Pillar ↗</a></div>`;
-$('#pillarPage').querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>{const c=p.projects[Number(b.dataset.project)];if(c.type==='work')openWork(c.index,b);else if(c.type==='event')openEvent(c.id,b);else openInfo(c.title,c.text,b)}));$('#pillarPage').querySelectorAll('[data-detail-scroll]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.detailScroll)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})))}
+$('#pillarPage').querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>{const c=p.projects[Number(b.dataset.project)];if(c.type==='work')openWork(c.index,b);else if(c.type==='event')openEvent(c.id,b);else openInfo(c.title,c.text,b)}));$('#pillarPage').querySelectorAll('[data-detail-scroll]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.detailScroll)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})));const sectionSelect=$('#pillarSectionSelect');if(sectionSelect)sectionSelect.addEventListener('change',e=>document.getElementById(e.target.value)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}))}
 function route(){
  const hash=decodeURIComponent(location.hash||'#home');
  const match=hash.match(/^#pillar\/([a-z-]+)$/);
@@ -556,16 +719,18 @@ function renderTrainerPage(){
   <section class="trainer-main" id="training-archive"><div class="wrap">
    <div class="section-head"><div><span class="eyebrow">THE RECORD / BROWSE THE SESSIONS</span><h2 class="section-title">Training<br><em>Archive.</em></h2></div><p class="muted">Search by title, organizer, subject or location. Browse by year, country and editorial topic. Session details reflect the supplied PDF.</p></div>
    <div class="trainer-chart" id="trainerChart" aria-label="Recorded session rows by year"></div>
-   <div class="trainer-controls"><div class="trainer-filters">
-    <div class="trainer-field"><label for="trainerSearch">Search sessions</label><input id="trainerSearch" type="search" placeholder="Search title, organisation, topic..." autocomplete="off"></div>
+   <div class="trainer-controls"><div class="trainer-field trainer-search-field"><label for="trainerSearch">Search sessions</label><input id="trainerSearch" type="search" placeholder="Search title, organisation, topic..." autocomplete="off"></div>
+   <button class="trainer-filter-toggle" id="trainerFilterToggle" type="button" aria-controls="trainerFilterPanel" aria-expanded="false">More filters <span aria-hidden="true">＋</span></button>
+   <div class="trainer-filter-panel" id="trainerFilterPanel"><div class="trainer-filters">
     <div class="trainer-field"><label for="trainerYear">Year</label><select id="trainerYear"><option>All years</option>${trainerYears.map(y=>`<option>${y}</option>`).join('')}</select></div>
     <div class="trainer-field"><label for="trainerCountry">Country</label><select id="trainerCountry"><option>All countries</option>${countries.map(c=>`<option>${esc(c)}</option>`).join('')}</select></div>
     <div class="trainer-field"><label for="trainerSort">Sort</label><select id="trainerSort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></div>
-   </div><div class="trainer-categories" id="trainerCategoryChips"></div>
+   </div><div class="trainer-categories" id="trainerCategoryChips"></div></div>
    <div class="trainer-controls-bottom"><span class="trainer-results-count" id="trainerCount" aria-live="polite"></span><button class="trainer-reset" id="trainerReset">Reset filters ↺</button></div></div>
    <div class="trainer-archive" id="trainerRecords"></div><div class="trainer-pagination" id="trainerPagination"></div>
    <div class="trainer-archive-footer"><div class="trainer-provenance"><strong>Source & accuracy note.</strong> This archive was transcribed from a two-page PDF exported from a training spreadsheet. The file reports 962.5 hours, 78 events and 2,183 trainees; its individually extracted rows do not fully reconcile with those summary totals. Some dates are irregular. Topic groupings are editorial aids, not labels originally assigned by the trainer. Please confirm information and certificates before external reliance.</div></div>
   </div></section>`;
+ $('#trainerFilterToggle').addEventListener('click',()=>{const panel=$('#trainerFilterPanel'),toggle=$('#trainerFilterToggle');const open=!panel.classList.contains('open');panel.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open));toggle.querySelector('span').textContent=open?'−':'＋'});
  $('#trainerSearch').addEventListener('input',e=>{trainerState.query=e.target.value;trainerState.page=1;renderTrainingResults()});
  $('#trainerYear').addEventListener('change',e=>{trainerState.year=e.target.value;trainerState.page=1;renderTrainingResults()});
  $('#trainerCountry').addEventListener('change',e=>{trainerState.country=e.target.value;trainerState.page=1;renderTrainingResults()});
